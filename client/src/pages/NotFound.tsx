@@ -1,49 +1,35 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home } from "lucide-react";
-import { useLocation } from "wouter";
+import { Link } from "wouter";
+import { Home, AlertTriangle } from "lucide-react";
 
 export default function NotFound() {
-  const [, setLocation] = useLocation();
-
-  const handleGoHome = () => {
-    setLocation("/");
-  };
-
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
-      <Card className="w-full max-w-lg mx-4 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-        <CardContent className="pt-8 pb-8 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="relative">
-              <div className="absolute inset-0 bg-red-100 rounded-full animate-pulse" />
-              <AlertCircle className="relative h-16 w-16 text-red-500" />
-            </div>
-          </div>
-
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">404</h1>
-
-          <h2 className="text-xl font-semibold text-slate-700 mb-4">
-            Page Not Found
-          </h2>
-
-          <p className="text-slate-600 mb-8 leading-relaxed">
-            Sorry, the page you are looking for doesn't exist.
-            <br />
-            It may have been moved or deleted.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button
-              onClick={handleGoHome}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Go Home
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
+    <div className="min-h-screen flex items-center justify-center" style={{ background: "oklch(0.08 0 0)" }}>
+      <div className="text-center px-6 max-w-lg">
+        <div className="w-16 h-16 rounded-sm flex items-center justify-center mx-auto mb-6" style={{ background: "oklch(0.58 0.22 27 / 0.15)", color: "oklch(0.58 0.22 27)" }}>
+          <AlertTriangle size={32} />
+        </div>
+        <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "6rem", color: "oklch(0.72 0.18 75)", lineHeight: 1, marginBottom: "0.5rem" }}>
+          404
+        </div>
+        <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.5rem", color: "white", marginBottom: "1rem" }}>
+          Page Not Found
+        </h1>
+        <p style={{ color: "oklch(0.6 0 0)", lineHeight: "1.7", fontFamily: "'Source Sans 3', sans-serif", marginBottom: "2rem" }}>
+          The page you're looking for doesn't exist. But there are animals that need your help — let's get you back on track.
+        </p>
+        <div className="flex flex-wrap gap-3 justify-center">
+          <Link href="/">
+            <span className="btn-gold" style={{ padding: "0.75rem 1.8rem", fontSize: "0.82rem" }}>
+              <Home size={15} /> Back to Home
+            </span>
+          </Link>
+          <a href="https://wa.me/254794277833" target="_blank" rel="noopener noreferrer">
+            <span className="btn-outline-gold" style={{ padding: "0.75rem 1.8rem", fontSize: "0.82rem" }}>
+              Chat WhatsApp
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
