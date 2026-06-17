@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { MapPin, Home, ChevronRight } from "lucide-react";
 
-const LAND_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSf_land/viewform";
+const LAND_FORM = "https://forms.gle/hRPzh4QRrzNhDj1BA";
 const WHATSAPP_CENTERS = "https://wa.me/254794277833?text=Hello%20Mr.%20Black%20APL%2C%20I%20want%20to%20discuss%20land%20donation%20for%20a%20rescue%20center.";
 
 function useScrollReveal() {

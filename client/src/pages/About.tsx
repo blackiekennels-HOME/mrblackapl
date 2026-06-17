@@ -186,7 +186,7 @@ export default function About() {
                     View Expansion Plans <ArrowRight size={14} />
                   </span>
                 </Link>
-                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.gle/hRPzh4QRrzNhDj1BA" target="_blank" rel="noopener noreferrer">
                   <span className="btn-outline-gold" style={{ padding: "0.85rem 2rem", fontSize: "0.85rem" }}>
                     Offer Land
                   </span>

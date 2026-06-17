@@ -71,7 +71,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link href="/">
             <div className="flex items-center gap-3 group">
               <img
-                src="/manus-storage/GradientLogo_0f339fad.png"
+                src="/manus-storage/logo-transparent_a0c9843f.png"
                 alt="Mr. Black APL Logo"
                 className="w-10 h-10 object-contain"
               />

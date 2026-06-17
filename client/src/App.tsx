@@ -17,6 +17,7 @@ import Events from "./pages/Events";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Centers from "./pages/Centers";
+import DonorDashboard from "./pages/DonorDashboard";
 import Layout from "./components/Layout";
 import NewsletterPopup from "./components/NewsletterPopup";
 
@@ -37,6 +38,7 @@ function Router() {
         <Route path="/blog" component={Blog} />
         <Route path="/contact" component={Contact} />
         <Route path="/centers" component={Centers} />
+        <Route path="/donor-dashboard" component={DonorDashboard} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
