@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Heart, ArrowRight, ChevronRight } from "lucide-react";
 
-const PAYSTACK_KEY = "pk_live_your_paystack_key"; // Replace with actual Paystack public key
+const PAYSTACK_KEY = import.meta.env.VITE_PAYSTACK_PUBLIC_KEY || "pk_live_your_paystack_key";
 
 function useScrollReveal() {
   useEffect(() => {
