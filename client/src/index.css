@@ -334,3 +334,46 @@
     width: 100%;
   }
 }
+
+  /* Dual CTA Button Animations */
+  .dual-cta-primary {
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  .dual-cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1);
+  }
+  .dual-cta-primary:active {
+    transform: scale(0.96);
+  }
+
+  /* Secondary action button (Join Group) */
+  .dual-cta-secondary {
+    background: oklch(0.35 0.15 142 / 0.2);
+    color: oklch(0.65 0.15 142);
+    border: 1px solid oklch(0.65 0.15 142 / 0.3);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  .dual-cta-secondary:hover {
+    background: oklch(0.35 0.15 142 / 0.35);
+    border-color: oklch(0.65 0.15 142 / 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px oklch(0.35 0.15 142 / 0.3);
+  }
+  .dual-cta-secondary:active {
+    transform: scale(0.96);
+    background: oklch(0.35 0.15 142 / 0.5);
+  }
+
+  /* Focus state for accessibility */
+  .dual-cta-primary:focus-visible,
+  .dual-cta-secondary:focus-visible {
+    outline: 2px solid oklch(0.72 0.18 75);
+    outline-offset: 2px;
+  }

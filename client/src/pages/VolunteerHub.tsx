@@ -147,13 +147,13 @@ export default function VolunteerHub() {
                   <p style={{ fontSize: "0.83rem", color: "oklch(0.55 0 0)", lineHeight: "1.6", marginBottom: "1.2rem" }}>{role.desc}</p>
                   <div className="flex gap-2">
                     <a href={role.form} target="_blank" rel="noopener noreferrer" className="flex-1">
-                      <span className="btn-gold" style={{ background: cat.color, padding: "0.45rem 0.8rem", fontSize: "0.72rem", display: "block", textAlign: "center" }}>
+                      <span className="btn-gold dual-cta-primary" style={{ background: cat.color, padding: "0.45rem 0.8rem", fontSize: "0.72rem", display: "block", textAlign: "center" }}>
                         {role.cta} <ChevronRight size={12} />
                       </span>
                     </a>
                     {role.group && (
                       <a href={role.group} target="_blank" rel="noopener noreferrer" className="flex-1">
-                        <span style={{ padding: "0.45rem 0.8rem", fontSize: "0.72rem", display: "block", textAlign: "center", background: "oklch(0.35 0.15 142 / 0.2)", color: "oklch(0.65 0.15 142)", borderRadius: "0.35rem", fontWeight: 600, cursor: "pointer" }}>
+                        <span className="dual-cta-secondary" style={{ padding: "0.45rem 0.8rem", fontSize: "0.72rem", display: "block", textAlign: "center", borderRadius: "0.35rem", fontWeight: 600 }}>
                           Join Group
                         </span>
                       </a>
