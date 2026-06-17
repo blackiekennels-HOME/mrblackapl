@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Heart, ArrowRight, ChevronRight } from "lucide-react";
 
 const WHATSAPP_DONATE = "https://wa.me/254794277833?text=Hello%20Mr.%20Black%20APL%2C%20I%20would%20like%20to%20make%20a%20donation.";
@@ -27,9 +27,9 @@ const presetAmounts = [
 ];
 
 const recurringOptions = [
-  { label: "Monthly", value: "monthly", description: "Sustain our mission every month" },
-  { label: "Quarterly", value: "quarterly", description: "Give 4 times per year" },
-  { label: "Annual", value: "annual", description: "One powerful gift per year" },
+  { label: "Monthly", value: "monthly", description: "Sustain our mission every month", interval: 30 },
+  { label: "Quarterly", value: "quarterly", description: "Give 4 times per year", interval: 90 },
+  { label: "Annual", value: "annual", description: "One powerful gift per year", interval: 365 },
 ];
 
 export default function Donate() {
@@ -37,15 +37,23 @@ export default function Donate() {
   const [customAmount, setCustomAmount] = useState("");
   const [donationType, setDonationType] = useState<"one-time" | "recurring">("one-time");
   const [recurringType, setRecurringType] = useState("monthly");
+  const [isProcessing, setIsProcessing] = useState(false);
 
   useScrollReveal();
 
-  const handlePaystackPayment = () => {
+  const handlePaystackPayment = async () => {
     const amount = selectedAmount || (customAmount ? parseInt(customAmount) : null);
     if (!amount || amount < 10) {
       alert("Please select or enter a valid amount (minimum KES 10)");
       return;
     }
+
+    if (PAYSTACK_KEY === "pk_live_your_paystack_key") {
+      alert("Paystack public key not configured. Please contact the administrator.");
+      return;
+    }
+
+    setIsProcessing(true);
 
     // Load Paystack script
     const script = document.createElement("script");
@@ -53,19 +61,51 @@ export default function Donate() {
     document.body.appendChild(script);
 
     script.onload = () => {
-      const handler = (window as any).PaystackPop.setup({
+      const paystackConfig: any = {
         key: PAYSTACK_KEY,
         email: "donor@mrblackapl.co.ke",
         amount: amount * 100, // Paystack expects amount in cents
         currency: "KES",
         ref: `APL-${Date.now()}`,
-        onClose: () => alert("Payment window closed."),
-        onSuccess: (response: any) => {
-          alert(`Payment successful! Reference: ${response.reference}`);
-          // Here you would typically send the donation info to your backend
+        onClose: () => {
+          setIsProcessing(false);
+          alert("Payment window closed.");
         },
-      });
+        onSuccess: (response: any) => {
+          setIsProcessing(false);
+          const typeLabel = donationType === "recurring" 
+            ? `${recurringType.charAt(0).toUpperCase() + recurringType.slice(1)} Recurring`
+            : "One-Time";
+          alert(`Payment successful! Reference: ${response.reference}\n\nDonation Type: ${typeLabel}\n\nThank you for supporting Mr. Black APL!`);
+          // Reset form
+          setSelectedAmount(null);
+          setCustomAmount("");
+        },
+      };
+
+      // For recurring donations, add plan configuration
+      if (donationType === "recurring") {
+        // Plan code format: APL_MONTHLY, APL_QUARTERLY, APL_ANNUAL
+        paystackConfig.plan = `APL_${recurringType.toUpperCase()}`;
+        // Optional: Add interval in days for reference
+        paystackConfig.metadata = {
+          donationType: "recurring",
+          interval: recurringType,
+          intervalDays: recurringOptions.find(r => r.value === recurringType)?.interval,
+        };
+      } else {
+        paystackConfig.metadata = {
+          donationType: "one-time",
+        };
+      }
+
+      const handler = (window as any).PaystackPop.setup(paystackConfig);
       handler.openIframe();
+    };
+
+    script.onerror = () => {
+      setIsProcessing(false);
+      alert("Failed to load Paystack. Please try again.");
     };
   };
 
@@ -212,7 +252,8 @@ export default function Donate() {
             {/* Paystack */}
             <button
               onClick={handlePaystackPayment}
-              className="apl-card p-6 text-center hover:bg-opacity-80 transition-all fade-up"
+              disabled={isProcessing}
+              className="apl-card p-6 text-center hover:bg-opacity-80 transition-all fade-up disabled:opacity-50"
               style={{ background: "oklch(0.72 0.18 75 / 0.1)" }}
             >
               <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>💳</div>
@@ -220,10 +261,10 @@ export default function Donate() {
                 Card / Mobile Money
               </h3>
               <p style={{ fontSize: "0.85rem", color: "oklch(0.6 0 0)", marginBottom: "1.5rem", fontFamily: "'Source Sans 3', sans-serif" }}>
-                Pay securely with Paystack
+                {donationType === "recurring" ? "Set up automatic monthly giving" : "Pay securely with Paystack"}
               </p>
-              <span className="btn-gold" style={{ padding: "0.65rem 1.5rem", fontSize: "0.8rem", display: "inline-block" }}>
-                Donate Now <ArrowRight size={14} />
+              <span className="btn-gold" style={{ padding: "0.65rem 1.5rem", fontSize: "0.8rem", display: "inline-block", opacity: isProcessing ? 0.7 : 1 }}>
+                {isProcessing ? "Processing..." : "Donate Now"} <ArrowRight size={14} />
               </span>
             </button>
 
@@ -243,6 +284,39 @@ export default function Donate() {
           </div>
         </div>
       </section>
+
+      {/* Recurring Donation Info */}
+      {donationType === "recurring" && (
+        <section className="py-16" style={{ background: "oklch(0.06 0 0)" }}>
+          <div className="container">
+            <div className="max-w-2xl mx-auto fade-up">
+              <div className="section-label">How Recurring Donations Work</div>
+              <div className="gold-line" />
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "clamp(1.6rem, 3vw, 2.2rem)", color: "white", marginTop: "0.5rem", marginBottom: "1.5rem" }}>
+                Automatic Monthly Giving
+              </h2>
+              <div className="space-y-3">
+                {[
+                  "Your chosen amount will be charged automatically on your selected frequency",
+                  "You can manage or cancel your subscription anytime through Paystack",
+                  "Monthly donors receive special recognition and exclusive updates",
+                  "Your consistent support allows us to plan long-term rescue operations",
+                  "100% of your donation goes directly to animal rescue and care",
+                ].map((step, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold" style={{ background: "oklch(0.72 0.18 75 / 0.15)", color: "oklch(0.72 0.18 75)", fontFamily: "'Source Sans 3', sans-serif" }}>
+                      ✓
+                    </div>
+                    <p style={{ fontSize: "0.9rem", color: "oklch(0.65 0 0)", lineHeight: "1.6", paddingTop: "4px", fontFamily: "'Source Sans 3', sans-serif" }}>
+                      {step}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* M-PESA Instructions */}
       <section className="py-16" style={{ background: "oklch(0.06 0 0)" }}>
@@ -308,20 +382,33 @@ export default function Donate() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16" style={{ background: "oklch(0.72 0.18 75)" }}>
-        <div className="container text-center fade-up">
-          <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "clamp(1.6rem, 3vw, 2.2rem)", color: "oklch(0.08 0 0)", marginBottom: "1rem" }}>
-            Have Questions?
-          </h2>
-          <p style={{ fontFamily: "'Source Sans 3', sans-serif", color: "oklch(0.2 0 0)", marginBottom: "1.5rem", maxWidth: "500px", margin: "0 auto 1.5rem" }}>
-            Chat with us on WhatsApp to discuss donation options, sponsorships, or corporate partnerships.
-          </p>
-          <a href={WHATSAPP_DONATE} target="_blank" rel="noopener noreferrer">
-            <span className="btn-gold" style={{ background: "oklch(0.08 0 0)", color: "oklch(0.72 0.18 75)", padding: "0.85rem 2rem", fontSize: "0.85rem", display: "inline-block" }}>
-              <Heart size={16} /> Chat on WhatsApp <ChevronRight size={14} />
-            </span>
-          </a>
+      {/* FAQ Section */}
+      <section className="py-16" style={{ background: "oklch(0.06 0 0)" }}>
+        <div className="container">
+          <div className="max-w-2xl mx-auto fade-up">
+            <div className="section-label">Questions?</div>
+            <div className="gold-line" />
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "clamp(1.6rem, 3vw, 2.2rem)", color: "white", marginTop: "0.5rem", marginBottom: "1.5rem" }}>
+              Donation FAQs
+            </h2>
+            <div className="space-y-4">
+              {[
+                { q: "Is my donation secure?", a: "Yes, all payments are processed through Paystack, a PCI-DSS compliant payment processor. Your card details are never stored on our servers." },
+                { q: "Can I cancel my recurring donation?", a: "Absolutely. You can manage or cancel your subscription anytime through Paystack or by contacting us at info@mrblackapl.co.ke" },
+                { q: "Will I receive a receipt?", a: "Yes, you'll receive an email receipt immediately after payment. Keep this for your records." },
+                { q: "How do I know my donation is making an impact?", a: "Monthly donors receive exclusive updates on rescue operations, animal stories, and impact reports." },
+              ].map((item, i) => (
+                <div key={i} className="apl-card p-4">
+                  <h3 style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 700, color: "oklch(0.72 0.18 75)", marginBottom: "0.5rem", fontSize: "0.95rem" }}>
+                    {item.q}
+                  </h3>
+                  <p style={{ fontSize: "0.85rem", color: "oklch(0.65 0 0)", fontFamily: "'Source Sans 3', sans-serif", lineHeight: "1.6" }}>
+                    {item.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </div>
