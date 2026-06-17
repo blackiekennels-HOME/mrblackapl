@@ -31,6 +31,33 @@ const steps = [
   { step: "04", title: "Transport", desc: "The animal is transported to our rehabilitation facility or partner veterinary clinic." },
 ];
 
+const faqs = [
+  {
+    question: "When should I use the HOT Emergency option?",
+    answer: "Use HOT Emergency if the animal is in immediate life-threatening danger: severe bleeding, trapped, being attacked, hit by a vehicle, or unable to move. These situations require instant response. Call or WhatsApp immediately."
+  },
+  {
+    question: "When should I use the Standard Report form?",
+    answer: "Use Standard Report for animals that need help but are not in immediate danger: malnourished, limping, sick, abandoned but safe, or injured but stable. Our team will respond within 24 hours with a rescue plan."
+  },
+  {
+    question: "What information do I need to provide?",
+    answer: "Provide the animal's location (street/area/landmark), type (dog, cat, bird, etc.), condition description, and your contact information. Photos are helpful but not required. For HOT emergencies, just call/WhatsApp with the location."
+  },
+  {
+    question: "How long does rescue take?",
+    answer: "HOT emergencies: Our team responds within 15-30 minutes. Standard reports: We assess and plan within 24 hours, then dispatch a rescue team. Response time depends on location and team availability."
+  },
+  {
+    question: "What happens after I report?",
+    answer: "We'll contact you to confirm details, assess the situation, and dispatch a rescue team. You may be asked to stay with the animal or provide access. We'll update you on the rescue progress and the animal's condition."
+  },
+  {
+    question: "Is there a cost to report or get rescued?",
+    answer: "No. All rescue services are free. We're funded by donations and volunteers. If you'd like to support our work, you can donate on our Donate page."
+  }
+];
+
 export default function Rescue() {
   useScrollReveal();
 
@@ -176,7 +203,7 @@ export default function Rescue() {
           </div>
 
           {/* Contact Info */}
-          <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-8 text-center">
+          <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-8 text-center mb-16">
             <h3 className="text-xl font-bold mb-4">24/7 Emergency Hotline</h3>
             <p className="text-gray-300 mb-4">
               Available round the clock for urgent animal emergencies
@@ -184,6 +211,81 @@ export default function Rescue() {
             <a href="tel:+254794277833" className="text-3xl font-bold text-amber-400 hover:text-amber-300">
               +254 794 277 833
             </a>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mt-20 pt-20 border-t border-gray-700">
+            <h2 className="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              {faqs.map((faq, idx) => (
+                <div key={idx} className="fade-up p-6 bg-gray-800/30 border border-gray-700 rounded-lg hover:border-amber-500/50 transition-all duration-300">
+                  <h3 className="text-lg font-bold text-amber-400 mb-3">{faq.question}</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Quick Reference */}
+            <div className="mt-16 p-8 bg-gradient-to-r from-amber-500/10 to-red-500/10 border border-amber-500/30 rounded-lg">
+              <h3 className="text-2xl font-bold mb-8 text-center">Quick Reference Guide</h3>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-8 h-8 bg-amber-500/20 rounded-full flex items-center justify-center">
+                      <span className="text-amber-400 font-bold">S</span>
+                    </div>
+                    <h4 className="text-lg font-bold">Standard Report</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-400 mt-1">•</span>
+                      <span>Animal needs help but not in immediate danger</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-400 mt-1">•</span>
+                      <span>Fill out the Google Form with details</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-400 mt-1">•</span>
+                      <span>Response within 24 hours</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-amber-400 mt-1">•</span>
+                      <span>Include photos if possible</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-8 h-8 bg-red-500/20 rounded-full flex items-center justify-center">
+                      <span className="text-red-400 font-bold">H</span>
+                    </div>
+                    <h4 className="text-lg font-bold text-red-400">HOT Emergency</h4>
+                  </div>
+                  <ul className="space-y-2 text-gray-300 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <span>Animal in immediate life-threatening danger</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <span>Call or WhatsApp immediately</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <span>Response within 15-30 minutes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <span>Just provide location and animal type</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -273,6 +375,12 @@ export default function Rescue() {
         .fade-up.visible {
           opacity: 1;
           transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+          .fade-up {
+            animation: fadeUpMobile 0.6s ease-out forwards;
+          }
         }
       `}</style>
     </div>
