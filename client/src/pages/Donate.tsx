@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import { Heart, ArrowRight, ChevronRight } from "lucide-react";
 
-const WHATSAPP_DONATE = "https://wa.me/254794277833?text=Hello%20Mr.%20Black%20APL%2C%20I%20would%20like%20to%20make%20a%20donation.";
-const MPESA_PAYBILL = "4157649";
-const DONATE_FORM = "https://forms.gle/3Cn41PQXGQFkXoc48";
 const PAYSTACK_KEY = "pk_live_your_paystack_key"; // Replace with actual Paystack public key
 
 function useScrollReveal() {
@@ -247,40 +244,25 @@ export default function Donate() {
             </div>
           )}
 
-          {/* Donation Methods */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            {/* Paystack */}
+          {/* Donation Button */}
+          <div className="max-w-md mx-auto fade-up">
             <button
               onClick={handlePaystackPayment}
               disabled={isProcessing}
-              className="apl-card p-6 text-center hover:bg-opacity-80 transition-all fade-up disabled:opacity-50"
-              style={{ background: "oklch(0.72 0.18 75 / 0.1)" }}
+              className="w-full apl-card p-6 text-center hover:bg-opacity-80 transition-all disabled:opacity-50"
+              style={{ background: "oklch(0.72 0.18 75 / 0.15)", border: "2px solid oklch(0.72 0.18 75 / 0.3)" }}
             >
-              <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>💳</div>
-              <h3 style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 700, color: "white", fontSize: "1rem", marginBottom: "0.5rem" }}>
-                Card / Mobile Money
+              <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>💳</div>
+              <h3 style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 700, color: "white", fontSize: "1.1rem", marginBottom: "0.5rem" }}>
+                Donate via Paystack
               </h3>
               <p style={{ fontSize: "0.85rem", color: "oklch(0.6 0 0)", marginBottom: "1.5rem", fontFamily: "'Source Sans 3', sans-serif" }}>
-                {donationType === "recurring" ? "Set up automatic monthly giving" : "Pay securely with Paystack"}
+                {donationType === "recurring" ? "Set up automatic recurring giving" : "Pay securely with card or mobile money"}
               </p>
-              <span className="btn-gold" style={{ padding: "0.65rem 1.5rem", fontSize: "0.8rem", display: "inline-block", opacity: isProcessing ? 0.7 : 1 }}>
-                {isProcessing ? "Processing..." : "Donate Now"} <ArrowRight size={14} />
+              <span className="btn-gold" style={{ padding: "0.75rem 2rem", fontSize: "0.9rem", display: "inline-block", opacity: isProcessing ? 0.7 : 1 }}>
+                {isProcessing ? "Processing..." : "Proceed to Payment"} <ArrowRight size={16} />
               </span>
             </button>
-
-            {/* M-PESA */}
-            <div className="apl-card p-6 text-center fade-up" style={{ background: "oklch(0.12 0 0)", transitionDelay: "80ms" }}>
-              <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>📱</div>
-              <h3 style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 700, color: "white", fontSize: "1rem", marginBottom: "0.5rem" }}>
-                M-PESA Paybill
-              </h3>
-              <div style={{ fontSize: "1.5rem", fontFamily: "'Playfair Display', serif", fontWeight: 700, color: "oklch(0.72 0.18 75)", marginBottom: "0.5rem" }}>
-                {MPESA_PAYBILL}
-              </div>
-              <p style={{ fontSize: "0.75rem", color: "oklch(0.6 0 0)", fontFamily: "'Source Sans 3', sans-serif" }}>
-                Account: Your Name
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -318,23 +300,25 @@ export default function Donate() {
         </section>
       )}
 
-      {/* M-PESA Instructions */}
+      {/* Paystack Payment Guide */}
       <section className="py-16" style={{ background: "oklch(0.06 0 0)" }}>
         <div className="container">
           <div className="max-w-2xl mx-auto fade-up">
-            <div className="section-label">How to Donate via M-PESA</div>
+            <div className="section-label">How to Donate via Paystack</div>
             <div className="gold-line" />
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "clamp(1.6rem, 3vw, 2.2rem)", color: "white", marginTop: "0.5rem", marginBottom: "1.5rem" }}>
               Step-by-Step Guide
             </h2>
             <div className="space-y-3">
               {[
-                "Go to M-PESA on your phone",
-                "Select Lipa na M-PESA → Paybill",
-                `Enter Business Number: ${MPESA_PAYBILL}`,
-                "Enter Account Number: Your Name",
-                "Enter Amount",
-                "Enter M-PESA PIN and confirm",
+                "Click 'Donate via Paystack' button above",
+                "Select your donation amount (preset or custom)",
+                "Choose donation type: One-Time or Recurring",
+                "If recurring, select frequency: Monthly, Quarterly, or Annual",
+                "You'll be redirected to Paystack's secure payment page",
+                "Enter your card details or select mobile money (M-PESA, Airtel Money, etc.)",
+                "Complete the payment and receive instant confirmation",
+                "For recurring donations, your subscription will be set up automatically",
               ].map((step, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold" style={{ background: "oklch(0.72 0.18 75 / 0.15)", color: "oklch(0.72 0.18 75)", fontFamily: "'Source Sans 3', sans-serif" }}>
@@ -394,7 +378,7 @@ export default function Donate() {
             <div className="space-y-4">
               {[
                 { q: "Is my donation secure?", a: "Yes, all payments are processed through Paystack, a PCI-DSS compliant payment processor. Your card details are never stored on our servers." },
-                { q: "Can I cancel my recurring donation?", a: "Absolutely. You can manage or cancel your subscription anytime through Paystack or by contacting us at info@mrblackapl.co.ke" },
+                { q: "Can I cancel my recurring donation?", a: "Absolutely. You can manage or cancel your subscription anytime through your Donor Dashboard at /donor-dashboard or by contacting us at info@mrblackapl.co.ke" },
                 { q: "Will I receive a receipt?", a: "Yes, you'll receive an email receipt immediately after payment. Keep this for your records." },
                 { q: "How do I know my donation is making an impact?", a: "Monthly donors receive exclusive updates on rescue operations, animal stories, and impact reports." },
               ].map((item, i) => (
