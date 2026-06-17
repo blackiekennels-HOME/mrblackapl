@@ -4,6 +4,8 @@ import { Heart, ArrowRight } from "lucide-react";
 // Direct Paystack payment links
 const ONE_TIME_PAYMENT_LINK = "https://paystack.shop/pay/0d6dd6-sml";
 const MONTHLY_PAYMENT_LINK = "https://paystack.shop/pay/n4wdi9ydo0";
+const DONATION_FORM = "https://forms.gle/3Cn41PQXGQFkXoc48";
+const DONATION_GROUP = "https://chat.whatsapp.com/EfwI09DuFXlD4dCW5cIjgH?mode=gi_t";
 
 function useScrollReveal() {
   useEffect(() => {
@@ -97,6 +99,11 @@ export default function Donate() {
                 Donate <ArrowRight size={18} style={{ marginLeft: "0.5rem", display: "inline" }} />
               </span>
             </button>
+            <a href={DONATION_GROUP} target="_blank" rel="noopener noreferrer">
+              <span style={{ padding: "0.85rem 2.5rem", fontSize: "1rem", display: "block", textAlign: "center", background: "oklch(0.35 0.15 142 / 0.2)", color: "oklch(0.65 0.15 142)", borderRadius: "0.35rem", fontWeight: 600, cursor: "pointer" }}>
+                Join Donors Group
+              </span>
+            </a>
           </div>
         </div>
       </section>

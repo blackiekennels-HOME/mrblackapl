@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import { Heart, Star, Shield, Crown, CheckCircle } from "lucide-react";
 
 const PATRON_FORM = "https://forms.gle/U5aHKtoRGPmeDLSq6";
+const PATRON_GROUP = "https://chat.whatsapp.com/EYTjBaWTJhPLSdkQdFdPwe?mode=gi_t";
 const WHATSAPP_PATRON = "https://wa.me/254794277833?text=Hello%20Mr.%20Black%20APL%2C%20I%20want%20to%20become%20a%20Patron.";
+
 
 function useScrollReveal() {
   useEffect(() => {
@@ -164,11 +166,18 @@ export default function Patron() {
                       </li>
                     ))}
                   </ul>
-                  <a href={PATRON_FORM} target="_blank" rel="noopener noreferrer">
-                    <span className="btn-gold w-full justify-center" style={{ background: tier.color, padding: "0.6rem 1rem", fontSize: "0.78rem" }}>
-                      Join as {tier.name}
-                    </span>
-                  </a>
+                  <div className="flex gap-2">
+                    <a href={PATRON_FORM} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <span className="btn-gold" style={{ background: tier.color, padding: "0.6rem 0.8rem", fontSize: "0.78rem", display: "block", textAlign: "center" }}>
+                        Join {tier.name}
+                      </span>
+                    </a>
+                    <a href={PATRON_GROUP} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <span style={{ padding: "0.6rem 0.8rem", fontSize: "0.78rem", display: "block", textAlign: "center", background: "oklch(0.35 0.15 142 / 0.2)", color: "oklch(0.65 0.15 142)", borderRadius: "0.35rem", fontWeight: 600, cursor: "pointer" }}>
+                        Join Group
+                      </span>
+                    </a>
+                  </div>
                 </div>
               );
             })}

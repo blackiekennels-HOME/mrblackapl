@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { Heart, Home as HomeIcon, CheckCircle, ChevronRight } from "lucide-react";
 
-const WHATSAPP_FOSTER = "https://wa.me/254794277833?text=Hello%20Mr.%20Black%20APL%2C%20I%20am%20interested%20in%20fostering%20an%20animal.";
+const WHATSAPP_FOSTER = "https://chat.whatsapp.com/JdMp0sdITjF3q4EWAiWCSx?mode=gi_t";
 const FOSTER_FORM = "https://forms.gle/Dcpq4yPMHqGeR6BN8";
+const FOSTER_GROUP = "https://chat.whatsapp.com/JdMp0sdITjF3q4EWAiWCSx?mode=gi_t";
 
 function useScrollReveal() {
   useEffect(() => {
@@ -51,12 +52,12 @@ export default function Foster() {
             <div className="flex flex-wrap gap-3">
               <a href={FOSTER_FORM} target="_blank" rel="noopener noreferrer">
                 <span className="btn-gold" style={{ padding: "0.85rem 2rem", fontSize: "0.85rem" }}>
-                  <HomeIcon size={16} /> Apply to Foster
+                  <HomeIcon size={16} /> Become Foster
                 </span>
               </a>
-              <a href={WHATSAPP_FOSTER} target="_blank" rel="noopener noreferrer">
+              <a href={FOSTER_GROUP} target="_blank" rel="noopener noreferrer">
                 <span className="btn-outline-gold" style={{ padding: "0.85rem 2rem", fontSize: "0.85rem" }}>
-                  Chat WhatsApp
+                  Join Group
                 </span>
               </a>
             </div>
