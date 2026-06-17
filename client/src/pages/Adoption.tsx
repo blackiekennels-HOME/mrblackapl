@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Heart, CheckCircle, ChevronRight, ArrowRight } from "lucide-react";
+import PhotoGallery from "@/components/PhotoGallery";
 
 const WHATSAPP_ADOPT = "https://wa.me/254794277833?text=Hello%20Mr.%20Black%20APL%2C%20I%20am%20interested%20in%20adopting%20an%20animal.";
 
@@ -37,6 +38,15 @@ const animals = [
   { name: "Rex", breed: "Rottweiler Mix", age: "4 years", gender: "Male", img: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&q=80", desc: "Loyal and intelligent. Needs an experienced owner with space.", tags: ["Vaccinated", "Experienced owner", "Loyal"] },
   { name: "Bella", breed: "Cocker Spaniel Mix", age: "2 years", gender: "Female", img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80", desc: "Sweet and gentle. Perfect apartment dog. Gets along with cats.", tags: ["Vaccinated", "Apartment-friendly", "Cat-friendly"] },
 ];
+
+// Photo gallery data for animals
+const adoptionPhotos = animals.map((animal) => ({
+  id: animal.name.toLowerCase(),
+  src: animal.img,
+  alt: `${animal.name} — ${animal.breed} available for adoption`,
+  title: `${animal.name} (${animal.breed})`,
+  category: animal.age.includes("months") ? "Puppies" : "Adult Dogs",
+}));
 
 export default function Adoption() {
   useScrollReveal();
@@ -90,49 +100,20 @@ export default function Adoption() {
         </div>
       </section>
 
-      {/* Available Animals */}
+      {/* Photo Gallery Section */}
       <section className="py-20" style={{ background: "oklch(0.08 0 0)" }}>
         <div className="container">
-          <div className="text-center mb-12 fade-up">
-            <div className="section-label">Ready for a Home</div>
-            <div className="gold-line mx-auto" />
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "white", marginTop: "0.5rem" }}>
-              Animals Available for Adoption
+          <div className="mb-12">
+            <div className="section-label fade-up">Meet Our Animals</div>
+            <div className="gold-line" />
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "white", marginTop: "0.5rem", marginBottom: "0.5rem" }}>
+              Animals Ready for <span style={{ color: "oklch(0.72 0.18 75)" }}>Adoption</span>
             </h2>
-            <p style={{ color: "oklch(0.6 0 0)", marginTop: "0.75rem", fontFamily: "'Source Sans 3', sans-serif" }}>
-              Contact us on WhatsApp to enquire about any animal or to start the adoption process.
+            <p style={{ color: "oklch(0.65 0 0)", lineHeight: "1.7", fontFamily: "'Source Sans 3', sans-serif", marginTop: "1rem" }}>
+              Click any photo to view the full gallery. Each animal has been fully vaccinated, health-checked, and is ready to become part of your family.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {animals.map((animal, i) => (
-              <div key={i} className="apl-card overflow-hidden fade-up" style={{ transitionDelay: `${i * 80}ms` }}>
-                <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
-                  <img src={animal.img} alt={`${animal.name} — ${animal.breed} available for adoption at Mr. Black APL Kenya`} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
-                  <div className="absolute top-3 right-3">
-                    <span className="px-2 py-1 text-xs font-bold rounded" style={{ background: "oklch(0.72 0.18 75)", color: "oklch(0.08 0 0)", fontFamily: "'Source Sans 3', sans-serif" }}>Available</span>
-                  </div>
-                </div>
-                <div className="p-5">
-                  <div className="flex items-center justify-between mb-1">
-                    <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.2rem", color: "white" }}>{animal.name}</h3>
-                    <span style={{ fontSize: "0.75rem", color: "oklch(0.55 0 0)" }}>{animal.gender} · {animal.age}</span>
-                  </div>
-                  <div style={{ fontSize: "0.78rem", color: "oklch(0.72 0.18 75)", marginBottom: "0.5rem", fontFamily: "'Source Sans 3', sans-serif" }}>{animal.breed}</div>
-                  <p style={{ fontSize: "0.83rem", color: "oklch(0.6 0 0)", lineHeight: "1.6", marginBottom: "0.75rem" }}>{animal.desc}</p>
-                  <div className="flex flex-wrap gap-1.5 mb-4">
-                    {animal.tags.map((tag, j) => (
-                      <span key={j} className="px-2 py-0.5 rounded text-xs" style={{ background: "oklch(0.72 0.18 75 / 0.12)", color: "oklch(0.72 0.18 75)", fontFamily: "'Source Sans 3', sans-serif" }}>{tag}</span>
-                    ))}
-                  </div>
-                  <a href={WHATSAPP_ADOPT} target="_blank" rel="noopener noreferrer" className="block">
-                    <span className="btn-gold w-full justify-center" style={{ padding: "0.55rem 1rem", fontSize: "0.75rem" }}>
-                      Adopt {animal.name}
-                    </span>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+          <PhotoGallery photos={adoptionPhotos} columns={3} showCategories={true} />
         </div>
       </section>
 

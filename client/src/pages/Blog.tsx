@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { ChevronRight } from "lucide-react";
+import PhotoGallery from "@/components/PhotoGallery";
 
 function useScrollReveal() {
   useEffect(() => {
@@ -81,6 +82,52 @@ const posts = [
   },
 ];
 
+// Sample rescue photos for the gallery — replace with real photos
+const rescuePhotos = [
+  {
+    id: "1",
+    src: "https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?w=800&q=80",
+    alt: "Rescued dog in recovery",
+    title: "Timmy's Recovery",
+    category: "Rescue Stories",
+  },
+  {
+    id: "2",
+    src: "https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&q=80",
+    alt: "Happy adopted dog with family",
+    title: "Bella's Forever Home",
+    category: "Adoption Success",
+  },
+  {
+    id: "3",
+    src: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80",
+    alt: "Rescue team in action",
+    title: "Field Operations",
+    category: "Rescue Stories",
+  },
+  {
+    id: "4",
+    src: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80",
+    alt: "Rescued puppies playing",
+    title: "Puppies at Play",
+    category: "Rehabilitation",
+  },
+  {
+    id: "5",
+    src: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=800&q=80",
+    alt: "Dog training session",
+    title: "Training Program",
+    category: "Rehabilitation",
+  },
+  {
+    id: "6",
+    src: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800https://images.unsplash.com/photo-1633722715463-d30628519d00?w=800&q=80q=80",
+    alt: "Volunteer with rescued dog",
+    title: "Volunteer Care",
+    category: "Rescue Stories",
+  },
+];
+
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState("All Stories");
   useScrollReveal();
@@ -105,6 +152,23 @@ export default function Blog() {
               Rescue stories, adoption tales, animal welfare insights, and community updates from the heart of Kenya's animal protection movement.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="py-16" style={{ background: "oklch(0.08 0 0)" }}>
+        <div className="container">
+          <div className="mb-12">
+            <div className="section-label">Visual Stories</div>
+            <div className="gold-line" />
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "white", marginTop: "0.5rem", marginBottom: "0.5rem" }}>
+              Rescue <span style={{ color: "oklch(0.72 0.18 75)" }}>Photo Gallery</span>
+            </h2>
+            <p style={{ color: "oklch(0.65 0 0)", lineHeight: "1.7", fontFamily: "'Source Sans 3', sans-serif", marginTop: "1rem" }}>
+              See the real stories behind our rescue operations. Click any photo to view the full gallery and learn more about each rescue journey.
+            </p>
+          </div>
+          <PhotoGallery photos={rescuePhotos} columns={3} showCategories={true} />
         </div>
       </section>
 
