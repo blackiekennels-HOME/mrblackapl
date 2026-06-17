@@ -73,7 +73,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <img
                 src="/manus-storage/MBAPL_Logo_-removebg-preview_ac34bdf4.png"
                 alt="Mr. Black APL Logo"
-                className="w-10 h-10 object-contain"
+                className="w-16 h-16 object-contain"
               />
               <div>
                 <div className="font-bold text-white leading-tight whitespace-nowrap" style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem" }}>
