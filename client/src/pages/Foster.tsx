@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Heart, Home as HomeIcon, CheckCircle, ChevronRight } from "lucide-react";
 
 const WHATSAPP_FOSTER = "https://wa.me/254794277833?text=Hello%20Mr.%20Black%20APL%2C%20I%20am%20interested%20in%20fostering%20an%20animal.";
-const FOSTER_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSf_foster_application/viewform";
+const FOSTER_FORM = "https://forms.gle/Dcpq4yPMHqGeR6BN8";
 
 function useScrollReveal() {
   useEffect(() => {

@@ -14,12 +14,12 @@ function useScrollReveal() {
 }
 
 const roles = [
-  { title: "Veterinary Volunteer", cta: "Join Vets", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_vet_volunteer/viewform", desc: "Provide veterinary care, medical treatment, and health monitoring for rescued animals." },
-  { title: "Rehabilitation Coordinator", cta: "Lead Rehab", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_rehab_coord/viewform", desc: "Oversee the rehabilitation process from intake to recovery and adoption readiness." },
-  { title: "Dog & Animal Trainer", cta: "Train Dogs", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_trainer/viewform", desc: "Provide behavioral rehabilitation and obedience training for rescued animals." },
-  { title: "Builder / Fundi / Materials Volunteer", cta: "Build With Us", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_builder/viewform", desc: "Help build and maintain kennel facilities, enclosures, and shelter infrastructure." },
-  { title: "Foster Care Volunteer", cta: "Become Foster", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_foster/viewform", desc: "Provide temporary home care for animals recovering from trauma or illness." },
-  { title: "Rehabilitation Admin & Records", cta: "Support Rehab", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_rehab_admin/viewform", desc: "Manage animal records, medical histories, and rehabilitation progress tracking." },
+  { title: "Veterinary Volunteer", cta: "Join Vets", href: "https://forms.gle/QXiNUJKYf7xYT9Rw5", desc: "Provide veterinary care, medical treatment, and health monitoring for rescued animals." },
+  { title: "Rehabilitation Coordinator", cta: "Lead Rehab", href: "https://forms.gle/tRN3jRYrMobVPo1G9", desc: "Oversee the rehabilitation process from intake to recovery and adoption readiness." },
+  { title: "Dog & Animal Trainer", cta: "Train Dogs", href: "https://forms.gle/UpNdpRuyU7oERWX97", desc: "Provide behavioral rehabilitation and obedience training for rescued animals." },
+  { title: "Builder / Fundi / Materials Volunteer", cta: "Build With Us", href: "https://forms.gle/auEntmxXCsu9Fic26", desc: "Help build and maintain kennel facilities, enclosures, and shelter infrastructure." },
+  { title: "Foster Care Volunteer", cta: "Become Foster", href: "https://forms.gle/Dcpq4yPMHqGeR6BN8", desc: "Provide temporary home care for animals recovering from trauma or illness." },
+  { title: "Rehabilitation Admin & Records", cta: "Support Rehab", href: "https://forms.gle/hA7VGgVJNmKAGtW16", desc: "Manage animal records, medical histories, and rehabilitation progress tracking." },
 ];
 
 const phases = [
@@ -48,7 +48,7 @@ export default function Rehabilitation() {
               Every rescued animal deserves a full recovery. Our rehabilitation program combines veterinary medicine, behavioral therapy, and compassionate care to give animals a second chance.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_vet_volunteer/viewform" target="_blank" rel="noopener noreferrer">
+              <a href="https://forms.gle/QXiNUJKYf7xYT9Rw5" target="_blank" rel="noopener noreferrer">
                 <span className="btn-gold" style={{ padding: "0.85rem 2rem", fontSize: "0.85rem" }}>
                   <Heart size={16} /> Join Vets
                 </span>

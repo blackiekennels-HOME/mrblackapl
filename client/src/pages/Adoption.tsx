@@ -17,9 +17,9 @@ function useScrollReveal() {
 }
 
 const adoptionRoles = [
-  { title: "Adoption Coordinator", cta: "Coordinate Adoptions", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_adoption_coord/viewform", desc: "Match animals with suitable adopters, conduct home checks, and manage the adoption process." },
-  { title: "Home Check Volunteer", cta: "Do Home Checks", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_home_check/viewform", desc: "Visit potential adopters' homes to ensure they are safe and suitable environments for animals." },
-  { title: "Adoption Follow-Up Volunteer", cta: "Follow Up", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_followup/viewform", desc: "Check in with adopters post-adoption to ensure animals are settling in well." },
+  { title: "Adoption Coordinator", cta: "Coordinate Adoptions", href: "https://forms.gle/eMtA8bMaz3w9A3Ed6", desc: "Match animals with suitable adopters, conduct home checks, and manage the adoption process." },
+  { title: "Adoption Screening", cta: "Screen Adopters", href: "https://forms.gle/3Lx1Lg82aBMRrpdG6", desc: "Screen potential adopters to ensure animals go to safe, loving homes." },
+  { title: "Adoption Follow-Up", cta: "Follow Up", href: "https://forms.gle/cW4YfLVBTaGWswBY8", desc: "Check in with adopters post-adoption to ensure animals are settling in well." },
 ];
 
 const steps = [
@@ -66,9 +66,9 @@ export default function Adoption() {
               Every animal in our care has a story. They've been rescued, rehabilitated, and are ready to fill your home with unconditional love. Choose adoption — choose to save a life.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href={WHATSAPP_ADOPT} target="_blank" rel="noopener noreferrer">
+              <a href="https://forms.gle/hgmicEbd8J6Ro7xJ6" target="_blank" rel="noopener noreferrer">
                 <span className="btn-gold" style={{ padding: "0.85rem 2rem", fontSize: "0.85rem" }}>
-                  <Heart size={16} /> Start Adoption
+                  <Heart size={16} /> Adopt Today
                 </span>
               </a>
               <Link href="/foster">

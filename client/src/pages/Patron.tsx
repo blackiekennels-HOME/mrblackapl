@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { Heart, Star, Shield, Crown, CheckCircle } from "lucide-react";
 
-const PATRON_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSf_patron/viewform";
-const PATRON_WHATSAPP = "https://chat.whatsapp.com/EYT...";
+const PATRON_FORM = "https://forms.gle/U5aHKtoRGPmeDLSq6";
 const WHATSAPP_PATRON = "https://wa.me/254794277833?text=Hello%20Mr.%20Black%20APL%2C%20I%20want%20to%20become%20a%20Patron.";
 
 function useScrollReveal() {
@@ -194,11 +193,7 @@ export default function Patron() {
                 <Heart size={15} /> Become Patron
               </span>
             </a>
-            <a href={PATRON_WHATSAPP} target="_blank" rel="noopener noreferrer">
-              <span className="btn-outline-gold" style={{ padding: "0.75rem 1.8rem", fontSize: "0.82rem" }}>
-                Join Patron Group
-              </span>
-            </a>
+
           </div>
         </div>
       </section>

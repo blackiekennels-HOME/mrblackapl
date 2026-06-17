@@ -15,7 +15,7 @@ function useScrollReveal() {
   }, []);
 }
 
-// All 28 volunteer forms with WhatsApp group links
+// All 28 volunteer forms
 const volunteerCategories = [
   {
     category: "Rescue — Field Operations",
@@ -149,11 +149,6 @@ export default function VolunteerHub() {
                     <a href={role.form} target="_blank" rel="noopener noreferrer">
                       <span className="btn-gold" style={{ background: cat.color, padding: "0.45rem 1rem", fontSize: "0.72rem" }}>
                         {role.cta} <ChevronRight size={12} />
-                      </span>
-                    </a>
-                    <a href={role.group} target="_blank" rel="noopener noreferrer">
-                      <span className="btn-outline-gold" style={{ borderColor: cat.color, color: cat.color, padding: "0.45rem 0.8rem", fontSize: "0.72rem" }}>
-                        <ExternalLink size={11} /> WhatsApp Group
                       </span>
                     </a>
                   </div>

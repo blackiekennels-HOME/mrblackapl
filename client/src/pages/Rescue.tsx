@@ -16,11 +16,11 @@ function useScrollReveal() {
 }
 
 const roles = [
-  { title: "Rescue Volunteer", cta: "Join Rescue", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_rescue_volunteer/viewform", desc: "Join our frontline rescue teams responding to emergency calls across Kenya." },
-  { title: "Transport & Vehicle Volunteer", cta: "Offer Transport", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_transport/viewform", desc: "Provide transport for rescued animals to veterinary facilities and shelters." },
-  { title: "Rescue Coordinator", cta: "Lead Rescue", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_coordinator/viewform", desc: "Coordinate rescue operations, manage teams, and liaise with veterinary support." },
-  { title: "Area Scout (Community Spotter)", cta: "Scout Areas", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_scout/viewform", desc: "Be the eyes and ears in your community — report animals in need before it's too late." },
-  { title: "Veterinary Assistant (Rescue Support)", cta: "Assist Rescue", href: "https://docs.google.com/forms/d/e/1FAIpQLSf_vet_assist/viewform", desc: "Provide on-site veterinary first aid and medical assessment during rescue operations." },
+  { title: "Rescue Volunteer", cta: "Join Rescue", href: "https://forms.gle/jXa75Qt6qbTMwho66", desc: "Join our frontline rescue teams responding to emergency calls across Kenya." },
+  { title: "Transport & Vehicle Volunteer", cta: "Offer Transport", href: "https://forms.gle/cwFjp32pqvfnMe5a8", desc: "Provide transport for rescued animals to veterinary facilities and shelters." },
+  { title: "Rescue Coordinator", cta: "Lead Rescue", href: "https://forms.gle/exeTmTzWUCK1ZzB9A", desc: "Coordinate rescue operations, manage teams, and liaise with veterinary support." },
+  { title: "Area Scout (Community Spotter)", cta: "Scout Areas", href: "https://forms.gle/FEKR4eEK42Agx4VY9", desc: "Be the eyes and ears in your community — report animals in need before it's too late." },
+  { title: "Veterinary Assistant (Rescue Support)", cta: "Assist Rescue", href: "https://forms.gle/BG6CwTeBoFdPMzzo7", desc: "Provide on-site veterinary first aid and medical assessment during rescue operations." },
 ];
 
 const steps = [
