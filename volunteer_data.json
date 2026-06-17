@@ -1,0 +1,339 @@
+{
+  "volunteer_forms": [
+    {
+      "category": "🐾 RESCUE (Report & Respond)",
+      "forms": [
+        {
+          "title": "Report an Animal in Need",
+          "cta": "Report Now",
+          "url": "https://forms.gle/yj9zxGqVqYTtxaL16",
+          "description": "Report abandoned, injured, or abused animals in need of rescue"
+        },
+        {
+          "title": "Rescue Volunteer Registration",
+          "cta": "Join Rescue",
+          "url": "https://forms.gle/jXa75Qt6qbTMwho66",
+          "description": "Join our frontline rescue teams responding to animal emergencies"
+        },
+        {
+          "title": "Transport & Vehicle Volunteer",
+          "cta": "Offer Transport",
+          "url": "https://forms.gle/cwFjp32pqvfnMe5a8",
+          "description": "Provide transport for rescued animals to rehabilitation centers"
+        },
+        {
+          "title": "Rescue Coordinator Application",
+          "cta": "Lead Rescue",
+          "url": "https://forms.gle/exeTmTzWUCK1ZzB9A",
+          "description": "Lead rescue operations and coordinate volunteer teams"
+        },
+        {
+          "title": "Area Scout (Community Spotter) Registration",
+          "cta": "Scout Areas",
+          "url": "https://forms.gle/FEKR4eEK42Agx4VY9",
+          "description": "Scout communities and report animal welfare concerns"
+        },
+        {
+          "title": "Veterinary Assistant (Rescue Support)",
+          "cta": "Assist Rescue",
+          "url": "https://forms.gle/BG6CwTeBoFdPMzzo7",
+          "description": "Provide veterinary support during rescue operations"
+        }
+      ]
+    },
+    {
+      "category": "🐾 REHABILITATION (Stabilize & Recover)",
+      "forms": [
+        {
+          "title": "Veterinary Volunteer Registration",
+          "cta": "Join Vets",
+          "url": "https://forms.gle/QXiNUJKYf7xYT9Rw5",
+          "description": "Provide veterinary care and medical treatment"
+        },
+        {
+          "title": "Rehabilitation Coordinator Application",
+          "cta": "Lead Rehab",
+          "url": "https://forms.gle/tRN3jRYrMobVPo1G9",
+          "description": "Coordinate rehabilitation programs and animal care"
+        },
+        {
+          "title": "Dog & Animal Trainer Registration",
+          "cta": "Train Dogs",
+          "url": "https://forms.gle/UpNdpRuyU7oERWX97",
+          "description": "Train rescued animals for adoption readiness"
+        },
+        {
+          "title": "Builder / Fundi / Materials Volunteer",
+          "cta": "Build With Us",
+          "url": "https://forms.gle/auEntmxXCsu9Fic26",
+          "description": "Help build and maintain rehabilitation facilities"
+        },
+        {
+          "title": "Foster Care Volunteer Application",
+          "cta": "Become Foster",
+          "url": "https://forms.gle/Dcpq4yPMHqGeR6BN8",
+          "description": "Open your home to foster rescued animals"
+        },
+        {
+          "title": "Rehabilitation Admin & Records Volunteer",
+          "cta": "Support Rehab",
+          "url": "https://forms.gle/hA7VGgVJNmKAGtW16",
+          "description": "Manage rehabilitation records and administration"
+        },
+        {
+          "title": "Rehabilitation Planner (Programs & Systems)",
+          "cta": "Plan Programs",
+          "url": "https://forms.gle/UNnSK1J9bqt5uN479",
+          "description": "Design and plan rehabilitation programs"
+        }
+      ]
+    },
+    {
+      "category": "🐾 REHOMING (Adoption & Follow-Up)",
+      "forms": [
+        {
+          "title": "Adoption Application Form",
+          "cta": "Adopt Today",
+          "url": "https://forms.gle/hgmicEbd8J6Ro7xJ6",
+          "description": "Apply to adopt a rescued animal"
+        },
+        {
+          "title": "Adoption Coordinator Volunteer",
+          "cta": "Coordinate Adoptions",
+          "url": "https://forms.gle/eMtA8bMaz3w9A3Ed6",
+          "description": "Coordinate adoption processes and match animals with families"
+        },
+        {
+          "title": "Adoption Screening Volunteer",
+          "cta": "Screen Adopters",
+          "url": "https://forms.gle/3Lx1Lg82aBMRrpdG6",
+          "description": "Screen potential adopters for suitability"
+        },
+        {
+          "title": "Adoption Media (Photography & Listings)",
+          "cta": "Create Listings",
+          "url": "https://forms.gle/n4TDVQYWWyJHpoC18",
+          "description": "Create photos and listings for adoptable animals"
+        },
+        {
+          "title": "Post-Adoption Follow-Up Volunteer",
+          "cta": "Follow Up",
+          "url": "https://forms.gle/cW4YfLVBTaGWswBY8",
+          "description": "Follow up with adopters to ensure animal welfare"
+        }
+      ]
+    },
+    {
+      "category": "🐾 OPERATIONS & COMMUNITY SUPPORT",
+      "forms": [
+        {
+          "title": "Project Manager Volunteer",
+          "cta": "Manage Projects",
+          "url": "https://forms.gle/GhMYe1cKaz2hNf1K7",
+          "description": "Manage APL projects and initiatives"
+        },
+        {
+          "title": "Customer Care & Communications Volunteer",
+          "cta": "Support Community",
+          "url": "https://forms.gle/RnySvTggJAFgPyJn9",
+          "description": "Provide customer care and community support"
+        },
+        {
+          "title": "WhatsApp Group Moderator",
+          "cta": "Moderate Groups",
+          "url": "https://forms.gle/gPVi1dEHLmiCuBsV8",
+          "description": "Moderate APL WhatsApp groups and communities"
+        },
+        {
+          "title": "Social Media & Content Volunteer",
+          "cta": "Create Content",
+          "url": "https://forms.gle/iHzeGgchJSvYYygP8",
+          "description": "Create content for social media and communications"
+        },
+        {
+          "title": "Events & Community Outreach Coordinator",
+          "cta": "Plan Events",
+          "url": "https://forms.gle/K462hMHjVLT3gm7z6",
+          "description": "Plan and coordinate community events and outreach"
+        }
+      ]
+    },
+    {
+      "category": "🐾 FUNDING & PARTNERSHIPS",
+      "forms": [
+        {
+          "title": "Donation Submission Form",
+          "cta": "GIVE Now",
+          "url": "https://forms.gle/3Cn41PQXGQFkXoc48",
+          "description": "Make a donation to support animal rescue"
+        },
+        {
+          "title": "Patron Membership Registration",
+          "cta": "Become Patron",
+          "url": "https://forms.gle/U5aHKtoRGPmeDLSq6",
+          "description": "Become a monthly patron and sustain our mission"
+        },
+        {
+          "title": "Merchandise Partner / Creator Application",
+          "cta": "Partner Merch",
+          "url": "https://forms.gle/GiNZR13w1i51uhMT7",
+          "description": "Partner with us on merchandise and fundraising"
+        },
+        {
+          "title": "Corporate & Business Partnership Inquiry",
+          "cta": "Explore Partnership",
+          "url": "https://forms.gle/GFpoEBfn37EDBauu9",
+          "description": "Explore corporate partnership opportunities"
+        },
+        {
+          "title": "Land Donation / Land Hosting Volunteer",
+          "cta": "Offer Land",
+          "url": "https://forms.gle/hRPzh4QRrzNhDj1BA",
+          "description": "Donate or host land for rescue centers"
+        }
+      ]
+    }
+  ],
+  "whatsapp_groups": [
+    {
+      "team": "Rescue Volunteers",
+      "group_name": "Rescue Volunteers Kenya",
+      "invite_link": "https://chat.whatsapp.com/L38Et6xNgYsKfzLDZpU8LH?mode=gi_t"
+    },
+    {
+      "team": "Transport",
+      "group_name": "Rescue Logistics Kenya",
+      "invite_link": "https://chat.whatsapp.com/Bcx67LTs6pLIKRLs4EERNa?mode=gi_t"
+    },
+    {
+      "team": "Rescue Coordinators",
+      "group_name": "Rescue Coordination",
+      "invite_link": "https://chat.whatsapp.com/KaqihWuzU1u3F5Hska9yHW?mode=gi_t"
+    },
+    {
+      "team": "Vet Assistant",
+      "group_name": "Rescue Medics",
+      "invite_link": "https://chat.whatsapp.com/B6uay5EmbBjHV51ry9eK6y?mode=gi_t"
+    },
+    {
+      "team": "Area Scout",
+      "group_name": "Animal Spotters Network",
+      "invite_link": "https://chat.whatsapp.com/Cj2tzD95HbE3HwHXOUFqsu?mode=gi_t"
+    },
+    {
+      "team": "Rescue Planners",
+      "group_name": "Rescue Planning & Ops",
+      "invite_link": "https://chat.whatsapp.com/Hjoz5BOvFZW8IPvWcdTIgN?mode=gi_t"
+    },
+    {
+      "team": "Veterinary Volunteers",
+      "group_name": "Vet Volunteers Kenya",
+      "invite_link": "https://chat.whatsapp.com/FOZcjul6a6cLW46WLxgqWb?mode=gi_t"
+    },
+    {
+      "team": "Rehab Coordinators",
+      "group_name": "Rehab Coordination Team",
+      "invite_link": "https://chat.whatsapp.com/KaqihWuzU1u3F5Hska9yHW?mode=gi_t"
+    },
+    {
+      "team": "Trainers",
+      "group_name": "Animal Training & Behavior",
+      "invite_link": "https://chat.whatsapp.com/INljkmx7jBxBgjEjjVcy6r?mode=gi_t"
+    },
+    {
+      "team": "Builders",
+      "group_name": "Shelter Construction Team",
+      "invite_link": "https://chat.whatsapp.com/Hfcsoq3wUeo0gDaeDXrwQ0?mode=gi_t"
+    },
+    {
+      "team": "Foster / Boarding",
+      "group_name": "Foster Homes Network",
+      "invite_link": "https://chat.whatsapp.com/JdMp0sdITjF3q4EWAiWCSx?mode=gi_t"
+    },
+    {
+      "team": "Rehab Admin",
+      "group_name": "Rehab Admin Team",
+      "invite_link": "https://chat.whatsapp.com/BSdDhYrFMRZ8vLnJJIfmBr?mode=gi_t"
+    },
+    {
+      "team": "Rehab Planners",
+      "group_name": "Rehab Programs & Events",
+      "invite_link": "https://chat.whatsapp.com/FhdOu9Divj1CoDeir6eIw6?mode=gi_t"
+    },
+    {
+      "team": "Adoption Coordinators",
+      "group_name": "Adoption Coordination",
+      "invite_link": "https://chat.whatsapp.com/Ktan8LRFDONCFleOcElDCd?mode=gi_t"
+    },
+    {
+      "team": "Adoption Vet / Screening",
+      "group_name": "Adoption Screening Team",
+      "invite_link": "https://chat.whatsapp.com/BdcgHMNpwJiG3BaiSTEJya?mode=gi_t"
+    },
+    {
+      "team": "Adoption Media",
+      "group_name": "Adoption Media Team",
+      "invite_link": "https://chat.whatsapp.com/HJ5pt0nnaxo9vvrmiReYpy?mode=gi_t"
+    },
+    {
+      "team": "Adoption Event",
+      "group_name": "Adoption Events Kenya",
+      "invite_link": "https://chat.whatsapp.com/GbMDM1bROLj9K1AbX8WAno?mode=gi_t"
+    },
+    {
+      "team": "Post-Adoption Follow-Up",
+      "group_name": "Adoption Follow-Up Network",
+      "invite_link": "https://chat.whatsapp.com/GRu7pGnhrqA8ECraF2ia2M?mode=gi_t"
+    },
+    {
+      "team": "Project Managers",
+      "group_name": "APL Operations PMs",
+      "invite_link": "https://chat.whatsapp.com/DcnQ1GPuuwwGgydiR7MKIE?mode=gi_t"
+    },
+    {
+      "team": "Customer Care",
+      "group_name": "Donor & Patron Support",
+      "invite_link": "https://chat.whatsapp.com/IeN8B6mfsbFE8hkwsNZgXv?mode=gi_t"
+    },
+    {
+      "team": "WhatsApp Moderators",
+      "group_name": "WhatsApp Moderators Team",
+      "invite_link": "https://chat.whatsapp.com/FhP8c13in5A44tZ8zBTWXS?mode=gi_t"
+    },
+    {
+      "team": "Social Media",
+      "group_name": "Content & Social Media Team",
+      "invite_link": "https://chat.whatsapp.com/BlTjFLaup7GJN4veiauEht?mode=gi_t"
+    },
+    {
+      "team": "Event Coordinators",
+      "group_name": "APL Events Team",
+      "invite_link": "https://chat.whatsapp.com/GbMDM1bROLj9K1AbX8WAno?mode=gi_t"
+    },
+    {
+      "team": "Donors",
+      "group_name": "Donors WhatsApp",
+      "invite_link": "https://chat.whatsapp.com/EfwI09DuFXlD4dCW5cIjgH?mode=gi_t"
+    },
+    {
+      "team": "Patrons",
+      "group_name": "Patrons WhatsApp",
+      "invite_link": "https://chat.whatsapp.com/EYTjBaWTJhPLSdkQdFdPwe?mode=gi_t"
+    },
+    {
+      "team": "Merchandise Partners",
+      "group_name": "Merch & Fundraising Partners",
+      "invite_link": "https://chat.whatsapp.com/EzOGqUmMoRmGFMrEjftfRo?mode=gi_t"
+    },
+    {
+      "team": "Corporate / Business Partners",
+      "group_name": "Business & Sponsors Network",
+      "invite_link": "https://chat.whatsapp.com/KWaExSeue9Y7CUISgr1yc4?mode=gi_t"
+    },
+    {
+      "team": "Builder / Materials Donors",
+      "group_name": "Shelter Construction Team",
+      "invite_link": "https://chat.whatsapp.com/GRAz14Ti7eC9XDBUpF4qui?mode=gi_t"
+    }
+  ]
+}

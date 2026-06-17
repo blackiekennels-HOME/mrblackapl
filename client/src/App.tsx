@@ -18,6 +18,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Centers from "./pages/Centers";
 import Layout from "./components/Layout";
+import NewsletterPopup from "./components/NewsletterPopup";
 
 function Router() {
   return (
@@ -49,6 +50,7 @@ function App() {
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
+          <NewsletterPopup />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
