@@ -1,0 +1,236 @@
+{
+  "rescue": [
+    {
+      "id": "report_animal",
+      "title": "Report an Animal in Need",
+      "cta": "Report Now",
+      "form": "https://forms.gle/yj9zxGqVqYTtxaL16",
+      "whatsapp": null,
+      "whatsapp_name": null
+    },
+    {
+      "id": "rescue_volunteer",
+      "title": "Rescue Volunteer Registration",
+      "cta": "Join Rescue",
+      "form": "https://forms.gle/jXa75Qt6qbTMwho66",
+      "whatsapp": "https://chat.whatsapp.com/L38Et6xNgYsKfzLDZpU8LH?mode=gi_t",
+      "whatsapp_name": "Rescue Volunteers Kenya"
+    },
+    {
+      "id": "transport_volunteer",
+      "title": "Transport & Vehicle Volunteer",
+      "cta": "Offer Transport",
+      "form": "https://forms.gle/cwFjp32pqvfnMe5a8",
+      "whatsapp": "https://chat.whatsapp.com/Bcx67LTs6pLIRLs4EERNa?mode=gi_t",
+      "whatsapp_name": "Rescue Logistics Kenya"
+    },
+    {
+      "id": "rescue_coordinator",
+      "title": "Rescue Coordinator Application",
+      "cta": "Lead Rescue",
+      "form": "https://forms.gle/exeTmTzWUCK1ZzB9A",
+      "whatsapp": "https://chat.whatsapp.com/KaqihWuzU1u3F5Hska9yHW?mode=gi_t",
+      "whatsapp_name": "Rescue Coordination"
+    },
+    {
+      "id": "area_scout",
+      "title": "Area Scout (Community Spotter) Registration",
+      "cta": "Scout Areas",
+      "form": "https://forms.gle/FEKR4eEK42Agx4VY9",
+      "whatsapp": "https://chat.whatsapp.com/Cj2tzD95HbE3HwHXOUFqsu?mode=gi_t",
+      "whatsapp_name": "Animal Spotters Network"
+    },
+    {
+      "id": "vet_assistant",
+      "title": "Veterinary Assistant (Rescue Support)",
+      "cta": "Assist Rescue",
+      "form": "https://forms.gle/BG6CwTeBoFdPMzzo7",
+      "whatsapp": "https://chat.whatsapp.com/B6uay5EmbBjHV51ry9eK6y?mode=gi_t",
+      "whatsapp_name": "Rescue Medics"
+    }
+  ],
+  "rehabilitation": [
+    {
+      "id": "vet_volunteer",
+      "title": "Veterinary Volunteer Registration",
+      "cta": "Join Vets",
+      "form": "https://forms.gle/QXiNUJKYf7xYT9Rw5",
+      "whatsapp": "https://chat.whatsapp.com/FOZcjul6a6cLW46WLxgqWb?mode=gi_t",
+      "whatsapp_name": "Vet Volunteers Kenya"
+    },
+    {
+      "id": "rehab_coordinator",
+      "title": "Rehabilitation Coordinator Application",
+      "cta": "Lead Rehab",
+      "form": "https://forms.gle/tRN3jRYrMobVPo1G9",
+      "whatsapp": "https://chat.whatsapp.com/KaqihWuzU1u3F5Hska9yHW?mode=gi_t",
+      "whatsapp_name": "Rehab Coordination Team"
+    },
+    {
+      "id": "trainer",
+      "title": "Dog & Animal Trainer Registration",
+      "cta": "Train Dogs",
+      "form": "https://forms.gle/UpNdpRuyU7oERWX97",
+      "whatsapp": "https://chat.whatsapp.com/INljkmx7jBxBgjEjjVcy6r?mode=gi_t",
+      "whatsapp_name": "Animal Training & Behavior"
+    },
+    {
+      "id": "builder",
+      "title": "Builder / Fundi / Materials Volunteer",
+      "cta": "Build With Us",
+      "form": "https://forms.gle/auEntmxXCsu9Fic26",
+      "whatsapp": "https://chat.whatsapp.com/Hfcsoq3wUeo0gDaeDXrwQ0?mode=gi_t",
+      "whatsapp_name": "Shelter Construction Team"
+    },
+    {
+      "id": "foster",
+      "title": "Foster Care Volunteer Application",
+      "cta": "Become Foster",
+      "form": "https://forms.gle/Dcpq4yPMHqGeR6BN8",
+      "whatsapp": "https://chat.whatsapp.com/JdMp0sdITjF3q4EWAiWCSx?mode=gi_t",
+      "whatsapp_name": "Foster Homes Network"
+    },
+    {
+      "id": "rehab_admin",
+      "title": "Rehabilitation Admin & Records Volunteer",
+      "cta": "Support Rehab",
+      "form": "https://forms.gle/hA7VGgVJNmKAGtW16",
+      "whatsapp": "https://chat.whatsapp.com/BSdDhYrFMRZ8vLnJJIfmBr?mode=gi_t",
+      "whatsapp_name": "Rehab Admin Team"
+    },
+    {
+      "id": "rehab_planner",
+      "title": "Rehabilitation Planner (Programs & Systems)",
+      "cta": "Plan Programs",
+      "form": "https://forms.gle/UNnSK1J9bqt5uN479",
+      "whatsapp": "https://chat.whatsapp.com/FhdOu9Divj1CoDeir6eIw6?mode=gi_t",
+      "whatsapp_name": "Rehab Programs & Events"
+    }
+  ],
+  "adoption": [
+    {
+      "id": "adoption_application",
+      "title": "Adoption Application Form",
+      "cta": "Adopt Today",
+      "form": "https://forms.gle/hgmicEbd8J6Ro7xJ6",
+      "whatsapp": null,
+      "whatsapp_name": null
+    },
+    {
+      "id": "adoption_coordinator",
+      "title": "Adoption Coordinator Volunteer",
+      "cta": "Coordinate Adoptions",
+      "form": "https://forms.gle/eMtA8bMaz3w9A3Ed6",
+      "whatsapp": "https://chat.whatsapp.com/Ktan8LRFDONCFleOcElDCd?mode=gi_t",
+      "whatsapp_name": "Adoption Coordination"
+    },
+    {
+      "id": "adoption_screening",
+      "title": "Adoption Screening Volunteer",
+      "cta": "Screen Adopters",
+      "form": "https://forms.gle/3Lx1Lg82aBMRrpdG6",
+      "whatsapp": "https://chat.whatsapp.com/BdcgHMNpwJiG3BaiSTEJya?mode=gi_t",
+      "whatsapp_name": "Adoption Screening Team"
+    },
+    {
+      "id": "adoption_media",
+      "title": "Adoption Media (Photography & Listings)",
+      "cta": "Create Listings",
+      "form": "https://forms.gle/n4TDVQYWWyJHpoC18",
+      "whatsapp": "https://chat.whatsapp.com/HJ5pt0nnaxo9vvrmiReYpy?mode=gi_t",
+      "whatsapp_name": "Adoption Media Team"
+    },
+    {
+      "id": "adoption_followup",
+      "title": "Post-Adoption Follow-Up Volunteer",
+      "cta": "Follow Up",
+      "form": "https://forms.gle/cW4YfLVBTaGWswBY8",
+      "whatsapp": "https://chat.whatsapp.com/GRu7pGnhrqA8ECraF2ia2M?mode=gi_t",
+      "whatsapp_name": "Adoption Follow-Up Network"
+    }
+  ],
+  "operations": [
+    {
+      "id": "project_manager",
+      "title": "Project Manager Volunteer",
+      "cta": "Manage Projects",
+      "form": "https://forms.gle/GhMYe1cKaz2hNf1K7",
+      "whatsapp": "https://chat.whatsapp.com/DcnQ1GPuuwwGgydiR7MKIE?mode=gi_t",
+      "whatsapp_name": "APL Operations PMs"
+    },
+    {
+      "id": "customer_care",
+      "title": "Customer Care & Communications Volunteer",
+      "cta": "Support Community",
+      "form": "https://forms.gle/RnySvTggJAFgPyJn9",
+      "whatsapp": "https://chat.whatsapp.com/IeN8B6mfsbFE8hkwsNZgXv?mode=gi_t",
+      "whatsapp_name": "Donor & Patron Support"
+    },
+    {
+      "id": "whatsapp_moderator",
+      "title": "WhatsApp Group Moderator",
+      "cta": "Moderate Groups",
+      "form": "https://forms.gle/gPVi1dEHLmiCuBsV8",
+      "whatsapp": "https://chat.whatsapp.com/FhP8c13in5A44tZ8zBTWXS?mode=gi_t",
+      "whatsapp_name": "WhatsApp Moderators Team"
+    },
+    {
+      "id": "social_media",
+      "title": "Social Media & Content Volunteer",
+      "cta": "Create Content",
+      "form": "https://forms.gle/iHzeGgchJSvYYygP8",
+      "whatsapp": "https://chat.whatsapp.com/BlTjFLaup7GJN4veiauEht?mode=gi_t",
+      "whatsapp_name": "Content & Social Media Team"
+    },
+    {
+      "id": "event_coordinator",
+      "title": "Events & Community Outreach Coordinator",
+      "cta": "Plan Events",
+      "form": "https://forms.gle/K462hMHjVLT3gm7z6",
+      "whatsapp": "https://chat.whatsapp.com/GbMDM1bROLj9K1AbX8WAno?mode=gi_t",
+      "whatsapp_name": "APL Events Team"
+    }
+  ],
+  "funding": [
+    {
+      "id": "donation",
+      "title": "Donation Submission Form",
+      "cta": "GIVE Now",
+      "form": "https://forms.gle/3Cn41PQXGQFkXoc48",
+      "whatsapp": "https://chat.whatsapp.com/EfwI09DuFXlD4dCW5cIjgH?mode=gi_t",
+      "whatsapp_name": "Donors WhatsApp"
+    },
+    {
+      "id": "patron",
+      "title": "Patron Membership Registration",
+      "cta": "Become Patron",
+      "form": "https://forms.gle/U5aHKtoRGPmeDLSq6",
+      "whatsapp": "https://chat.whatsapp.com/EYTjBaWTJhPLSdkQdFdPwe?mode=gi_t",
+      "whatsapp_name": "Patrons WhatsApp"
+    },
+    {
+      "id": "merch_partner",
+      "title": "Merchandise Partner / Creator Application",
+      "cta": "Partner Merch",
+      "form": "https://forms.gle/GiNZR13w1i51uhMT7",
+      "whatsapp": "https://chat.whatsapp.com/EzOGqUmMoRmGFMrEjftfRo?mode=gi_t",
+      "whatsapp_name": "Merch & Fundraising Partners"
+    },
+    {
+      "id": "corporate_partner",
+      "title": "Corporate & Business Partnership Inquiry",
+      "cta": "Explore Partnership",
+      "form": "https://forms.gle/GFpoEBfn37EDBauu9",
+      "whatsapp": "https://chat.whatsapp.com/KWaExSeue9Y7CUISgr1yc4?mode=gi_t",
+      "whatsapp_name": "Business & Sponsors Network"
+    },
+    {
+      "id": "land_donation",
+      "title": "Land Donation / Land Hosting Volunteer",
+      "cta": "Offer Land",
+      "form": "https://forms.gle/hRPzh4QRrzNhDj1BA",
+      "whatsapp": "https://chat.whatsapp.com/GRAz14Ti7eC9XDBUpF4qui?mode=gi_t",
+      "whatsapp_name": "Shelter Construction Team"
+    }
+  ]
+}

@@ -17,9 +17,11 @@ function useScrollReveal() {
 }
 
 const adoptionRoles = [
-  { title: "Adoption Coordinator", cta: "Coordinate Adoptions", href: "https://forms.gle/eMtA8bMaz3w9A3Ed6", desc: "Match animals with suitable adopters, conduct home checks, and manage the adoption process." },
-  { title: "Adoption Screening", cta: "Screen Adopters", href: "https://forms.gle/3Lx1Lg82aBMRrpdG6", desc: "Screen potential adopters to ensure animals go to safe, loving homes." },
-  { title: "Adoption Follow-Up", cta: "Follow Up", href: "https://forms.gle/cW4YfLVBTaGWswBY8", desc: "Check in with adopters post-adoption to ensure animals are settling in well." },
+  { title: "Adoption Coordinator", cta: "Coordinate Adoptions", href: "https://forms.gle/eMtA8bMaz3w9A3Ed6", whatsapp: "https://chat.whatsapp.com/Ktan8LRFDONCFleOcElDCd?mode=gi_t", desc: "Match animals with suitable adopters, conduct home checks, and manage the adoption process." },
+  { title: "Adoption Screening", cta: "Screen Adopters", href: "https://forms.gle/3Lx1Lg82aBMRrpdG6", whatsapp: "https://chat.whatsapp.com/BdcgHMNpwJiG3BaiSTEJya?mode=gi_t", desc: "Screen potential adopters to ensure animals go to safe, loving homes." },
+  { title: "Adoption Media", cta: "Create Listings", href: "https://forms.gle/n4TDVQYWWyJHpoC18", whatsapp: "https://chat.whatsapp.com/HJ5pt0nnaxo9vvrmiReYpy?mode=gi_t", desc: "Create compelling photos and listings to showcase available animals." },
+  { title: "Adoption Events", cta: "Plan Events", href: "https://forms.gle/GbMDM1bROLj9K1AbX8WAno?mode=gi_t", whatsapp: "https://chat.whatsapp.com/GbMDM1bROLj9K1AbX8WAno?mode=gi_t", desc: "Organize adoption drives and community events to connect animals with families." },
+  { title: "Post-Adoption Follow-Up", cta: "Follow Up", href: "https://forms.gle/cW4YfLVBTaGWswBY8", whatsapp: "https://chat.whatsapp.com/GRu7pGnhrqA8ECraF2ia2M?mode=gi_t", desc: "Check in with adopters post-adoption to ensure animals are settling in well." },
 ];
 
 const steps = [
@@ -163,11 +165,20 @@ export default function Adoption() {
               <div key={i} className="apl-card p-6 fade-up" style={{ transitionDelay: `${i * 80}ms` }}>
                 <h3 style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 700, color: "white", fontSize: "1rem", marginBottom: "0.5rem" }}>{role.title}</h3>
                 <p style={{ fontSize: "0.83rem", color: "oklch(0.55 0 0)", lineHeight: "1.6", marginBottom: "1.2rem" }}>{role.desc}</p>
-                <a href={role.href} target="_blank" rel="noopener noreferrer">
-                  <span className="btn-gold" style={{ padding: "0.5rem 1.2rem", fontSize: "0.75rem" }}>
-                    {role.cta} <ChevronRight size={13} />
-                  </span>
-                </a>
+                <div className="flex gap-2">
+                  <a href={role.href} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <span className="btn-gold" style={{ padding: "0.5rem 0.8rem", fontSize: "0.75rem", display: "block", textAlign: "center" }}>
+                      {role.cta} <ChevronRight size={13} />
+                    </span>
+                  </a>
+                  {role.whatsapp && (
+                    <a href={role.whatsapp} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <span style={{ padding: "0.5rem 0.8rem", fontSize: "0.75rem", display: "block", textAlign: "center", background: "oklch(0.35 0.15 142 / 0.2)", color: "oklch(0.65 0.15 142)", borderRadius: "0.35rem", fontWeight: 600, cursor: "pointer" }}>
+                        Join Group
+                      </span>
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>

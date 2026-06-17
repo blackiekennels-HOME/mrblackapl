@@ -14,12 +14,13 @@ function useScrollReveal() {
 }
 
 const roles = [
-  { title: "Veterinary Volunteer", cta: "Join Vets", href: "https://forms.gle/QXiNUJKYf7xYT9Rw5", desc: "Provide veterinary care, medical treatment, and health monitoring for rescued animals." },
-  { title: "Rehabilitation Coordinator", cta: "Lead Rehab", href: "https://forms.gle/tRN3jRYrMobVPo1G9", desc: "Oversee the rehabilitation process from intake to recovery and adoption readiness." },
-  { title: "Dog & Animal Trainer", cta: "Train Dogs", href: "https://forms.gle/UpNdpRuyU7oERWX97", desc: "Provide behavioral rehabilitation and obedience training for rescued animals." },
-  { title: "Builder / Fundi / Materials Volunteer", cta: "Build With Us", href: "https://forms.gle/auEntmxXCsu9Fic26", desc: "Help build and maintain kennel facilities, enclosures, and shelter infrastructure." },
-  { title: "Foster Care Volunteer", cta: "Become Foster", href: "https://forms.gle/Dcpq4yPMHqGeR6BN8", desc: "Provide temporary home care for animals recovering from trauma or illness." },
-  { title: "Rehabilitation Admin & Records", cta: "Support Rehab", href: "https://forms.gle/hA7VGgVJNmKAGtW16", desc: "Manage animal records, medical histories, and rehabilitation progress tracking." },
+  { title: "Veterinary Volunteer", cta: "Join Vets", href: "https://forms.gle/QXiNUJKYf7xYT9Rw5", whatsapp: "https://chat.whatsapp.com/FOZcjul6a6cLW46WLxgqWb?mode=gi_t", desc: "Provide veterinary care, medical treatment, and health monitoring for rescued animals." },
+  { title: "Rehabilitation Coordinator", cta: "Lead Rehab", href: "https://forms.gle/tRN3jRYrMobVPo1G9", whatsapp: "https://chat.whatsapp.com/KaqihWuzU1u3F5Hska9yHW?mode=gi_t", desc: "Oversee the rehabilitation process from intake to recovery and adoption readiness." },
+  { title: "Dog & Animal Trainer", cta: "Train Dogs", href: "https://forms.gle/UpNdpRuyU7oERWX97", whatsapp: "https://chat.whatsapp.com/INljkmx7jBxBgjEjjVcy6r?mode=gi_t", desc: "Provide behavioral rehabilitation and obedience training for rescued animals." },
+  { title: "Builder / Fundi / Materials Volunteer", cta: "Build With Us", href: "https://forms.gle/auEntmxXCsu9Fic26", whatsapp: "https://chat.whatsapp.com/Hfcsoq3wUeo0gDaeDXrwQ0?mode=gi_t", desc: "Help build and maintain kennel facilities, enclosures, and shelter infrastructure." },
+  { title: "Foster Care Volunteer", cta: "Become Foster", href: "https://forms.gle/Dcpq4yPMHqGeR6BN8", whatsapp: "https://chat.whatsapp.com/JdMp0sdITjF3q4EWAiWCSx?mode=gi_t", desc: "Provide temporary home care for animals recovering from trauma or illness." },
+  { title: "Rehabilitation Admin & Records", cta: "Support Rehab", href: "https://forms.gle/hA7VGgVJNmKAGtW16", whatsapp: "https://chat.whatsapp.com/BSdDhYrFMRZ8vLnJJIfmBr?mode=gi_t", desc: "Manage animal records, medical histories, and rehabilitation progress tracking." },
+  { title: "Rehabilitation Planner", cta: "Plan Programs", href: "https://forms.gle/UNnSK1J9bqt5uN479", whatsapp: "https://chat.whatsapp.com/FhdOu9Divj1CoDeir6eIw6?mode=gi_t", desc: "Design and implement rehabilitation programs, protocols, and recovery systems." },
 ];
 
 const phases = [
@@ -144,11 +145,20 @@ export default function Rehabilitation() {
               <div key={i} className="apl-card p-6 fade-up" style={{ transitionDelay: `${i * 80}ms` }}>
                 <h3 style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 700, color: "white", fontSize: "1rem", marginBottom: "0.5rem" }}>{role.title}</h3>
                 <p style={{ fontSize: "0.83rem", color: "oklch(0.55 0 0)", lineHeight: "1.6", marginBottom: "1.2rem" }}>{role.desc}</p>
-                <a href={role.href} target="_blank" rel="noopener noreferrer">
-                  <span className="btn-gold" style={{ padding: "0.5rem 1.2rem", fontSize: "0.75rem" }}>
-                    {role.cta} <ChevronRight size={13} />
-                  </span>
-                </a>
+                <div className="flex gap-2">
+                  <a href={role.href} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <span className="btn-gold" style={{ padding: "0.5rem 0.8rem", fontSize: "0.75rem", display: "block", textAlign: "center" }}>
+                      {role.cta} <ChevronRight size={13} />
+                    </span>
+                  </a>
+                  {role.whatsapp && (
+                    <a href={role.whatsapp} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <span style={{ padding: "0.5rem 0.8rem", fontSize: "0.75rem", display: "block", textAlign: "center", background: "oklch(0.35 0.15 142 / 0.2)", color: "oklch(0.65 0.15 142)", borderRadius: "0.35rem", fontWeight: 600, cursor: "pointer" }}>
+                        Join Group
+                      </span>
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>

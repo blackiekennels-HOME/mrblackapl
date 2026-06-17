@@ -17,11 +17,11 @@ function useScrollReveal() {
 }
 
 const roles = [
-  { title: "Rescue Volunteer", cta: "Fill Form", href: "https://forms.gle/jXa75Qt6qbTMwho66", whatsapp: "https://chat.whatsapp.com/L38Et6xNgYsKfzLDZpU8LH?mode=gi_t", desc: "Join our frontline rescue teams responding to emergency calls across Kenya." },
-  { title: "Transport & Vehicle Volunteer", cta: "Fill Form", href: "https://forms.gle/cwFjp32pqvfnMe5a8", whatsapp: "https://chat.whatsapp.com/Bcx67LTs6pLIRLs4EERNa?mode=gi_t", desc: "Provide transport for rescued animals to veterinary facilities and shelters." },
-  { title: "Rescue Coordinator", cta: "Fill Form", href: "https://forms.gle/exeTmTzWUCK1ZzB9A", whatsapp: "https://chat.whatsapp.com/KaqihWuzU1u3F5Hska9yHW?mode=gi_t", desc: "Coordinate rescue operations, manage teams, and liaise with veterinary support." },
-  { title: "Area Scout (Community Spotter)", cta: "Fill Form", href: "https://forms.gle/FEKR4eEK42Agx4VY9", whatsapp: "https://chat.whatsapp.com/Cj2tzD95HbE3HwHXOUFqsu?mode=gi_t", desc: "Be the eyes and ears in your community — report animals in need before it's too late." },
-  { title: "Veterinary Assistant (Rescue Support)", cta: "Fill Form", href: "https://forms.gle/BG6CwTeBoFdPMzzo7", whatsapp: "https://chat.whatsapp.com/B6uay5EmbBjHV51ry9eK6y?mode=gi_t", desc: "Provide on-site veterinary first aid and medical assessment during rescue operations." },
+  { title: "Rescue Volunteer", cta: "Join Rescue", href: "https://forms.gle/jXa75Qt6qbTMwho66", whatsapp: "https://chat.whatsapp.com/L38Et6xNgYsKfzLDZpU8LH?mode=gi_t", desc: "Join our frontline rescue teams responding to emergency calls across Kenya." },
+  { title: "Transport & Vehicle Volunteer", cta: "Offer Transport", href: "https://forms.gle/cwFjp32pqvfnMe5a8", whatsapp: "https://chat.whatsapp.com/Bcx67LTs6pLIRLs4EERNa?mode=gi_t", desc: "Provide transport for rescued animals to veterinary facilities and shelters." },
+  { title: "Rescue Coordinator", cta: "Lead Rescue", href: "https://forms.gle/exeTmTzWUCK1ZzB9A", whatsapp: "https://chat.whatsapp.com/KaqihWuzU1u3F5Hska9yHW?mode=gi_t", desc: "Coordinate rescue operations, manage teams, and liaise with veterinary support." },
+  { title: "Area Scout (Community Spotter)", cta: "Scout Areas", href: "https://forms.gle/FEKR4eEK42Agx4VY9", whatsapp: "https://chat.whatsapp.com/Cj2tzD95HbE3HwHXOUFqsu?mode=gi_t", desc: "Be the eyes and ears in your community — report animals in need before it's too late." },
+  { title: "Veterinary Assistant (Rescue Support)", cta: "Assist Rescue", href: "https://forms.gle/BG6CwTeBoFdPMzzo7", whatsapp: "https://chat.whatsapp.com/B6uay5EmbBjHV51ry9eK6y?mode=gi_t", desc: "Provide on-site veterinary first aid and medical assessment during rescue operations." },
 ];
 
 const steps = [
