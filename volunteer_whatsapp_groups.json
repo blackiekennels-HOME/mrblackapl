@@ -1,0 +1,140 @@
+{
+  "rescue_volunteer": {
+    "name": "Rescue Volunteer",
+    "form": "https://forms.gle/jXa75Qt6qbTMwho66",
+    "whatsapp_group": "https://chat.whatsapp.com/L38Et6xNgYsKfzLDZpU8LH?mode=gi_t",
+    "whatsapp_name": "Rescue Volunteers Kenya"
+  },
+  "transport_volunteer": {
+    "name": "Transport & Vehicle Volunteer",
+    "form": "https://forms.gle/cwFjp32pqvfnMe5a8",
+    "whatsapp_group": "https://chat.whatsapp.com/Bcx67LTs6pLIRLs4EERNa?mode=gi_t",
+    "whatsapp_name": "Rescue Logistics Kenya"
+  },
+  "rescue_coordinator": {
+    "name": "Rescue Coordinator",
+    "form": "https://forms.gle/exeTmTzWUCK1ZzB9A",
+    "whatsapp_group": "https://chat.whatsapp.com/KaqihWuzU1u3F5Hska9yHW?mode=gi_t",
+    "whatsapp_name": "Rescue Coordination"
+  },
+  "area_scout": {
+    "name": "Area Scout (Community Spotter)",
+    "form": "https://forms.gle/FEKR4eEK42Agx4VY9",
+    "whatsapp_group": "https://chat.whatsapp.com/Cj2tzD95HbE3HwHXOUFqsu?mode=gi_t",
+    "whatsapp_name": "Animal Spotters Network"
+  },
+  "vet_assistant": {
+    "name": "Veterinary Assistant (Rescue Support)",
+    "form": "https://forms.gle/BG6CwTeBoFdPMzzo7",
+    "whatsapp_group": "https://chat.whatsapp.com/B6uay5EmbBjHV51ry9eK6y?mode=gi_t",
+    "whatsapp_name": "Rescue Medics"
+  },
+  "rescue_planner": {
+    "name": "Rescue Planner",
+    "form": "https://forms.gle/rescue_planner",
+    "whatsapp_group": "https://chat.whatsapp.com/Hjoz5BOvFZW8IPvWcdTIgN?mode=gi_t",
+    "whatsapp_name": "Rescue Planning & Ops"
+  },
+  "vet_volunteer": {
+    "name": "Veterinary Volunteer",
+    "form": "https://forms.gle/vet_volunteer",
+    "whatsapp_group": "https://chat.whatsapp.com/FOZcjul6a6cLW46WLxgqWb?mode=gi_t",
+    "whatsapp_name": "Vet Volunteers Kenya"
+  },
+  "rehab_coordinator": {
+    "name": "Rehab Coordinator",
+    "form": "https://forms.gle/rehab_coordinator",
+    "whatsapp_group": "https://chat.whatsapp.com/KaqihWuzU1u3F5Hska9yHW?mode=gi_t",
+    "whatsapp_name": "Rehab Coordination Team"
+  },
+  "trainer": {
+    "name": "Trainer",
+    "form": "https://forms.gle/trainer",
+    "whatsapp_group": "https://chat.whatsapp.com/INljkmx7jBxBgjEjjVcy6r?mode=gi_t",
+    "whatsapp_name": "Animal Training & Behavior"
+  },
+  "builder": {
+    "name": "Builder",
+    "form": "https://forms.gle/builder",
+    "whatsapp_group": "https://chat.whatsapp.com/Hfcsoq3wUeo0gDaeDXrwQ0?mode=gi_t",
+    "whatsapp_name": "Shelter Construction Team"
+  },
+  "foster_boarding": {
+    "name": "Foster / Boarding",
+    "form": "https://forms.gle/foster_boarding",
+    "whatsapp_group": "https://chat.whatsapp.com/JdMp0sdITjF3q4EWAiWCSx?mode=gi_t",
+    "whatsapp_name": "Foster Homes Network"
+  },
+  "rehab_admin": {
+    "name": "Rehab Admin",
+    "form": "https://forms.gle/rehab_admin",
+    "whatsapp_group": "https://chat.whatsapp.com/BSdDhYrFMRZ8vLnJJIfmBr?mode=gi_t",
+    "whatsapp_name": "Rehab Admin Team"
+  },
+  "rehab_planner": {
+    "name": "Rehab Planner",
+    "form": "https://forms.gle/rehab_planner",
+    "whatsapp_group": "https://chat.whatsapp.com/FhdOu9Divj1CoDeir6eIw6?mode=gi_t",
+    "whatsapp_name": "Rehab Programs & Events"
+  },
+  "adoption_coordinator": {
+    "name": "Adoption Coordinator",
+    "form": "https://forms.gle/adoption_coordinator",
+    "whatsapp_group": "https://chat.whatsapp.com/Ktan8LRFDONCFleOcElDCd?mode=gi_t",
+    "whatsapp_name": "Adoption Coordination"
+  },
+  "adoption_vet": {
+    "name": "Adoption Vet / Screening",
+    "form": "https://forms.gle/adoption_vet",
+    "whatsapp_group": "https://chat.whatsapp.com/BdcgHMNpwJiG3BaiSTEJya?mode=gi_t",
+    "whatsapp_name": "Adoption Screening Team"
+  },
+  "adoption_media": {
+    "name": "Adoption Media",
+    "form": "https://forms.gle/adoption_media",
+    "whatsapp_group": "https://chat.whatsapp.com/HJ5pt0nnaxo9vvrmiReYpy?mode=gi_t",
+    "whatsapp_name": "Adoption Media Team"
+  },
+  "adoption_event": {
+    "name": "Adoption Event",
+    "form": "https://forms.gle/adoption_event",
+    "whatsapp_group": "https://chat.whatsapp.com/GbMDM1bROLj9K1AbX8WAno?mode=gi_t",
+    "whatsapp_name": "Adoption Events Kenya"
+  },
+  "adoption_followup": {
+    "name": "Post-Adoption Follow-Up",
+    "form": "https://forms.gle/adoption_followup",
+    "whatsapp_group": "https://chat.whatsapp.com/GRu7pGnhrqA8ECraF2ia2M?mode=gi_t",
+    "whatsapp_name": "Adoption Follow-Up Network"
+  },
+  "project_manager": {
+    "name": "Project Manager",
+    "form": "https://forms.gle/project_manager",
+    "whatsapp_group": "https://chat.whatsapp.com/DcnQ1GPuuwwGgydiR7MKIE?mode=gi_t",
+    "whatsapp_name": "APL Operations PMs"
+  },
+  "customer_care": {
+    "name": "Customer Care",
+    "form": "https://forms.gle/customer_care",
+    "whatsapp_group": "https://chat.whatsapp.com/IeN8B6mfsbFE8hkwsNZgXv?mode=gi_t",
+    "whatsapp_name": "Donor & Patron Support"
+  },
+  "whatsapp_moderator": {
+    "name": "WhatsApp Moderator",
+    "form": "https://forms.gle/whatsapp_moderator",
+    "whatsapp_group": "https://chat.whatsapp.com/FhP8c13in5A44tZ8zBTWXS?mode=gi_t",
+    "whatsapp_name": "WhatsApp Moderators Team"
+  },
+  "social_media": {
+    "name": "Social Media",
+    "form": "https://forms.gle/social_media",
+    "whatsapp_group": "https://chat.whatsapp.com/BlTjFLaup7GJN4veiauEht?mode=gi_t",
+    "whatsapp_name": "Content & Social Media Team"
+  },
+  "event_coordinator": {
+    "name": "Event Coordinator",
+    "form": "https://forms.gle/event_coordinator",
+    "whatsapp_group": "https://chat.whatsapp.com/GbMDM1bROLj9K1AbX8WAno?mode=gi_t",
+    "whatsapp_name": "APL Events Team"
+  }
+}
