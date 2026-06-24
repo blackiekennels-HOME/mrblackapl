@@ -1,3 +1,4 @@
+import { ButtonWithLoader } from "@/components/ButtonWithLoader";
 import { useEffect } from "react";
 import { Heart, Star, Shield, Crown, CheckCircle } from "lucide-react";
 

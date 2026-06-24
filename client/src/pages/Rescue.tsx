@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { AlertTriangle, Phone, Users, Truck, MapPin, Shield, ChevronRight, MessageCircle, AlertCircle } from "lucide-react";
+import { ButtonWithLoader } from "@/components/ButtonWithLoader";
 
 const WHATSAPP_URL = "https://wa.me/254794277833?text=🚨%20EMERGENCY%3A%20I%20need%20to%20report%20an%20animal%20in%20immediate%20danger.%20Please%20respond%20urgently.";
 const STANDARD_REPORT_FORM = "https://forms.gle/yj9zxGqVqYTtxaL16";
@@ -327,23 +328,21 @@ export default function Rescue() {
                 </div>
                 <p className="text-gray-400 mb-6 text-sm">{role.desc}</p>
                 <div className="flex gap-3">
-                  <a
-                    href={role.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 px-4 py-2 bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 font-semibold rounded-lg transition-all duration-300 text-sm text-center"
+                  <ButtonWithLoader
+                    onClick={() => window.open(role.href, '_blank')}
+                    variant="primary"
+                    className="flex-1 !bg-amber-500/20 !text-amber-400 !px-4 !py-2 !text-sm"
                   >
                     {role.cta} →
-                  </a>
-                  <a
-                    href={role.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 px-4 py-2 bg-green-500/20 hover:bg-green-500/30 text-green-400 font-semibold rounded-lg transition-all duration-300 text-sm text-center flex items-center justify-center gap-2"
+                  </ButtonWithLoader>
+                  <ButtonWithLoader
+                    onClick={() => window.open(role.whatsapp, '_blank')}
+                    variant="secondary"
+                    className="flex-1 !bg-green-500/20 !text-green-400 !px-4 !py-2 !text-sm flex items-center justify-center gap-2"
                   >
                     <MessageCircle size={16} />
                     Join Group
-                  </a>
+                  </ButtonWithLoader>
                 </div>
               </div>
             ))}

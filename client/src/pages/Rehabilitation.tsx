@@ -1,3 +1,4 @@
+import { ButtonWithLoader } from "@/components/ButtonWithLoader";
 import { useEffect } from "react";
 import { Link } from "wouter";
 import { Heart, Stethoscope, Brain, Hammer, Home as HomeIcon, ChevronRight } from "lucide-react";
