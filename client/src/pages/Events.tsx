@@ -29,7 +29,7 @@ const upcomingEvents = [
   {
     title: "Community Awareness Clinic",
     type: "Community Outreach",
-    date: "March 22, 2027",
+    date: "June 21, 2027",
     time: "9:00 AM – 2:00 PM",
     location: "Dandora Community Park",
     desc: "Free pet health checks, microchipping, and animal welfare education for the community.",
@@ -39,7 +39,7 @@ const upcomingEvents = [
   {
     title: "Fundraiser Gala Evening",
     type: "Fundraiser",
-    date: "April 5, 2027",
+    date: "August 30, 2027",
     time: "6:00 PM – 10:00 PM",
     location: "The Edge Convention Centre, Upper Hill",
     desc: "An elegant evening celebrating our rescue stories with live music, auctions, and networking.",
@@ -49,7 +49,7 @@ const upcomingEvents = [
   {
     title: "Veterinary Outreach Clinic",
     type: "Community Outreach",
-    date: "April 12, 2027",
+    date: "November 15, 2027",
     time: "8:00 AM – 3:00 PM",
     location: "Kibera Community Hall",
     desc: "Mobile veterinary clinic providing free medical services to underserved communities.",
