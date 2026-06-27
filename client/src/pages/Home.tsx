@@ -22,9 +22,9 @@ function useScrollReveal() {
 }
 
 const stats = [
-  { number: "500+", label: "Animals Rescued" },
-  { number: "350+", label: "Successfully Rehomed" },
-  { number: "200+", label: "Active Volunteers" },
+  { number: "60+", label: "Animals Rescued" },
+  { number: "58+", label: "Successfully Rehomed" },
+  { number: "Actively Accepting", label: "Volunteers Across All Counties" },
   { number: "47", label: "Counties Reached" },
 ];
 
