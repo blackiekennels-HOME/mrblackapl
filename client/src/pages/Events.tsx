@@ -141,9 +141,7 @@ export default function Events() {
                     <div className="flex items-center gap-2" style={{ fontSize: "0.82rem", color: "oklch(0.6 0 0)" }}>
                       <Clock size={13} style={{ color: "oklch(0.72 0.18 75)" }} /> {event.time}
                     </div>
-                    <div className="flex items-center gap-2" style={{ fontSize: "0.82rem", color: "oklch(0.6 0 0)" }}>
-                      <MapPin size={13} style={{ color: "oklch(0.72 0.18 75)" }} /> {event.location}
-                    </div>
+
                   </div>
                   <p style={{ fontSize: "0.83rem", color: "oklch(0.55 0 0)", lineHeight: "1.6", marginBottom: "1rem" }}>{event.desc}</p>
                   <a href={WHATSAPP_EVENTS} target="_blank" rel="noopener noreferrer">
