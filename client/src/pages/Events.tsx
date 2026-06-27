@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Calendar, MapPin, Clock, ChevronRight } from "lucide-react";
 
-const EVENTS_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSf_events/viewform";
+const EVENTS_FORM = "https://forms.gle/K462hMHjVLT3gm7z6";
 const WHATSAPP_EVENTS = "https://wa.me/254794277833?text=Hello%20Mr.%20Black%20APL%2C%20I%20want%20to%20attend%20or%20volunteer%20at%20an%20event.";
 
 function useScrollReveal() {

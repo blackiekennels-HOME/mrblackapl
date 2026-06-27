@@ -74,7 +74,7 @@ export default function PhotoGallery({ photos, columns = 3, showCategories = fal
       )}
 
       {/* Photo Grid */}
-      <div className={`grid gap-4 mb-8`} style={{ gridTemplateColumns: `repeat(auto-fill, minmax(${300 / columns}px, 1fr))` }}>
+      <div className={`grid gap-6 mb-8`} style={{ gridTemplateColumns: `repeat(auto-fill, minmax(350px, 1fr))` }}>
         {filteredPhotos.map(photo => (
           <div
             key={photo.id}
@@ -84,7 +84,7 @@ export default function PhotoGallery({ photos, columns = 3, showCategories = fal
             <img
               src={photo.src}
               alt={photo.alt}
-              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-end p-4">
               {photo.title && (
