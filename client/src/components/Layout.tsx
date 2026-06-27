@@ -71,9 +71,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link href="/">
             <div className="flex items-center gap-3 group">
               <img
-                src="/manus-storage/MBAOrgLogo_f0c69848.png"
+                src="/logo.png"
                 alt="Mr. Black APL Logo"
-                className="w-32 h-32 object-contain"
+                className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain"
               />
               <div className="hidden sm:block">
                 <div className="font-bold text-white leading-tight whitespace-nowrap" style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem" }}>
